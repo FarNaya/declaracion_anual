@@ -3247,5 +3247,33 @@ a.text-dark:hover, a.text-dark:focus { color: #121416 !important; }
   .table-dark th, .table-dark td, .table-dark thead th, .table-dark tbody + tbody { border-color: #dee2e6; }
   .table .thead-dark th { color: inherit; border-color: #dee2e6; } }
 
-body { background-color: black; }
+body { background-color: white; font-family: coolvetica, coolvetica-condensed-rg, Arial, Helvetica, sans-serif; color: #3d4543; }
+
+header { position: absolute; z-index: 10; width: 100vw; }
+
+.bg-light { background-color: transparent !important; }
+
+.navbar { background-color: #009383; }
+
+.nav-item { font-size: 1.5rem; color: #ffffff; }
+
+.fab, .fas { color: #ffffff; }
+
+.fab:hover, .fas:hover { color: #ff681d; }
+
+.hero { position: relative; background: url(/src/assets/img/hero-bg.png); min-height: 100vh; background-size: cover; background-position: center center; }
+
+#overlay { top: 0; left: 0; width: 100%; height: 100%; background-color: #009383; opacity: 0.6; mix-blend-mode: multiply; }
+
+.hero h1 { font-size: 20px !important; color: #ffffff; line-height: 2rem; }
+
+.hero-text { margin-top: 140px; }
+
+.form-container { background-color: #ffffff; height: 420px; border-radius: 0.5rem; width: 310px; line-height: 150%; }
+
+p { font-family: helvetica; font-size: 60%; line-height: 2em; text-align: justify; }
+
+.btn-primary { background-color: #ff681d; border: #ff681d; font-size: 80%; letter-spacing: .1rem; line-height: 2em; font-weight: lighter; }
+
+.mb-3 { padding-top: 2em; }
 /*# sourceMappingURL=main.css.map */
