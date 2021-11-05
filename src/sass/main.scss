@@ -10,7 +10,6 @@
 // @import "~slick-carousel/slick/slick-theme.css";
 // @import "~sweetalert2/dist/sweetalert2.min.css";
 
-
 body{
     background-color: white;
     font-family: coolvetica, coolvetica-condensed-rg, Arial, Helvetica, sans-serif;
@@ -45,6 +44,10 @@ header{
         color: $highlight;
     }
 
+    .text-navbar{
+        color: $secondary;
+        display: none;
+    }
 // hero
 .hero {
     position: relative;
@@ -52,7 +55,6 @@ header{
     min-height: 100vh;
     background-size: cover;
     background-position: center center;
-   
 }
 
   #overlay{
@@ -78,11 +80,12 @@ header{
     // Form
     .form-container{
         background-color: $secondary;
-        height: 400px;
+        height: 370px;
         border-radius: $border-radius-lg;
         width: 310px;
         line-height: 150%;
     }
+
         p{ 
         font-family: helvetica;
         font-size: 60%;
@@ -90,7 +93,7 @@ header{
         text-align: justify;
         }
 
-    .btn-primary{
+        .btn-primary{
         background-color: $highlight;
         border: $highlight;
         font-size: $btn-font-size-sm;
@@ -105,8 +108,8 @@ header{
 
     //Caracteristicas
     .index-main{
-        margin-top: 4rem;
-        clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 100%);
+        margin-top: 5rem;
+        clip-path: polygon(0% 4%, 100% 0%, 100% 100%, 0% 100%);
         height: 100%;
         position: relative;
         background: url(/assets/img/pattern-background.png);
@@ -117,31 +120,33 @@ header{
     }
 
         .index-mobile{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 5rem;
-            margin-bottom: 5rem;
-            width: 70%;
+            width: 300px;
         }
-
-
-        img{
-            width: 50px;
-            height: auto;
-            display: block;
-            margin: 3rem auto 1rem auto;
-
-        }
-
+        
        .descp-p{
-            padding: 12px;
+            padding: 2px;
             color: $white;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-            font-size: .9rem;
+            font-size: 90%;
         }
 
+       .icon{
+           height: 60px;
+           width: 85px;
+           flex: 0;
+       }
+
+        h5{
+            color: white;
+        }
 // Section 3
+
+@media (min-width: 768px) {
+.form-container{ height: 450px;}
+
+    .descp-p {font-size: .65rem;}
+    h5{font-size: 90%;}
+    .icon{height: 45px;width: 70px;}
+    .text-navbar{display: initial;}
+
+
+  }
