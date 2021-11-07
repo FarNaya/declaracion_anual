@@ -3260,7 +3260,7 @@ header { position: absolute; z-index: 10; width: 100vw; }
 
 .navbar { background-color: #009383; }
 
-.nav-item { font-size: 1.5rem; color: #ffffff; }
+.nav-item { font-size: 1.3rem; color: #ffffff; }
 
 .fab, .fas { color: #ffffff; }
 
@@ -3272,15 +3272,15 @@ header { position: absolute; z-index: 10; width: 100vw; }
 
 #overlay { top: 0; left: 0; width: 100%; height: 100%; background-color: #009383; opacity: 0.6; mix-blend-mode: multiply; }
 
-.hero h1 { font-size: 20px !important; color: #ffffff; line-height: 2rem; }
+.text-hero { font-size: 120%; color: #ffffff; line-height: 2rem; }
 
 .hero-text { margin-top: 140px; }
 
 .form-container { background-color: #ffffff; height: 370px; border-radius: 0.5rem; width: 310px; line-height: 150%; }
 
-p { font-family: helvetica; font-size: 60%; line-height: 2em; text-align: justify; }
+p { font-family: helvetica; font-size: 60%; line-height: 2rem; text-align: justify; }
 
-.btn-primary { background-color: #ff681d; border: #ff681d; font-size: 80%; letter-spacing: .1rem; line-height: 2em; font-weight: lighter; }
+.btn-primary { background-color: #ff681d; border: #ff681d; font-size: 80%; letter-spacing: .1rem; line-height: 2rem; font-weight: lighter; }
 
 .mb-3 { padding-top: 2em; }
 
@@ -3294,9 +3294,30 @@ p { font-family: helvetica; font-size: 60%; line-height: 2em; text-align: justif
 
 h5 { color: white; }
 
+table { color: #3c4544; }
+
+h2 { color: #ffffff; letter-spacing: .1rem; }
+
+.back-grey { background-color: #f2f2f2; }
+
+.p-tbl { font-size: .75rem; font-family: Arial, Helvetica, sans-serif; font-weight: bold; line-height: 1rem; }
+
+th { background-color: #009383; border-radius: 6px; }
+
+tr, td { padding: 15px; }
+
+h6 { color: #009383; letter-spacing: .1rem; }
+
 @media (min-width: 768px) { .form-container { height: 450px; }
+  .text-hero { font-size: 140%; }
   .descp-p { font-size: .65rem; }
   h5 { font-size: 90%; }
   .icon { height: 45px; width: 70px; }
   .text-navbar { display: initial; } }
+
+@media (min-width: 992px) { .text-navbar { font-size: 180%; }
+  h5 { font-size: 120%; }
+  .icon { height: 50px; width: 75px; }
+  .fab, .fas { font-size: 150%; }
+  .descp-p { font-size: 95%; } }
 /*# sourceMappingURL=main.css.map */
