@@ -80,7 +80,7 @@ header{
     // Form
     .form-container{
         background-color: $secondary;
-        height: 370px;
+        height: 395px;
         border-radius: $border-radius-lg;
         width: 310px;
         line-height: 150%;
@@ -142,9 +142,10 @@ header{
 // 
 table{
     color: $font-grey;
+    width: 350px;
 }
 
-    h2{
+    h3{
         color: $secondary;
         letter-spacing: .1rem;
     }
@@ -170,8 +171,16 @@ table{
     }
         h6{
             color: $primary;
-            letter-spacing: .1rem;
+            letter-spacing: .08rem;
+            text-align: left;
+            font-size: 90%;
         }
+
+    .p-pricing{
+        color: $secondary;
+        font-size: 90%;
+    }
+
 
 @media (min-width: 768px) {
     .form-container{ height: 450px;}
@@ -187,5 +196,5 @@ table{
     h5{font-size: 120%;}
     .icon{height: 50px;width: 75px;}
     .fab,.fas{font-size: 150%;}
-    .descp-p{font-size: 95%;}
+    .descp-p{font-size: 80%;}
   }

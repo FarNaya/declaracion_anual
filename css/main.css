@@ -3276,7 +3276,7 @@ header { position: absolute; z-index: 10; width: 100vw; }
 
 .hero-text { margin-top: 140px; }
 
-.form-container { background-color: #ffffff; height: 370px; border-radius: 0.5rem; width: 310px; line-height: 150%; }
+.form-container { background-color: #ffffff; height: 395px; border-radius: 0.5rem; width: 310px; line-height: 150%; }
 
 p { font-family: helvetica; font-size: 60%; line-height: 2rem; text-align: justify; }
 
@@ -3294,9 +3294,9 @@ p { font-family: helvetica; font-size: 60%; line-height: 2rem; text-align: justi
 
 h5 { color: white; }
 
-table { color: #3c4544; }
+table { color: #3c4544; width: 350px; }
 
-h2 { color: #ffffff; letter-spacing: .1rem; }
+h3 { color: #ffffff; letter-spacing: .1rem; }
 
 .back-grey { background-color: #f2f2f2; }
 
@@ -3306,7 +3306,9 @@ th { background-color: #009383; border-radius: 6px; }
 
 tr, td { padding: 15px; }
 
-h6 { color: #009383; letter-spacing: .1rem; }
+h6 { color: #009383; letter-spacing: .08rem; text-align: left; font-size: 90%; }
+
+.p-pricing { color: #ffffff; font-size: 90%; }
 
 @media (min-width: 768px) { .form-container { height: 450px; }
   .text-hero { font-size: 140%; }
@@ -3319,5 +3321,5 @@ h6 { color: #009383; letter-spacing: .1rem; }
   h5 { font-size: 120%; }
   .icon { height: 50px; width: 75px; }
   .fab, .fas { font-size: 150%; }
-  .descp-p { font-size: 95%; } }
+  .descp-p { font-size: 80%; } }
 /*# sourceMappingURL=main.css.map */
