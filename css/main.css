@@ -3274,13 +3274,11 @@ header { position: absolute; z-index: 10; width: 100vw; }
 
 .text-hero { font-size: 120%; color: #ffffff; line-height: 2rem; }
 
-.hero-text { margin-top: 140px; }
-
 .form-container { background-color: #ffffff; height: 395px; border-radius: 0.5rem; width: 310px; line-height: 150%; }
 
-p { font-family: helvetica; font-size: 60%; line-height: 2rem; text-align: justify; }
+p { font-family: Arial, Helvetica, sans-serif; font-size: 60%; line-height: 2rem; text-align: justify; line-height: 1.3rem; }
 
-.btn-primary { background-color: #ff681d; border: #ff681d; font-size: 80%; letter-spacing: .1rem; line-height: 2rem; font-weight: lighter; }
+.btn-primary { background-color: #ff681d; border: #ff681d; font-size: 80%; line-height: 2rem; width: 250px; font-weight: lighter; letter-spacing: .1rem; }
 
 .mb-3 { padding-top: 2em; }
 
@@ -3296,7 +3294,9 @@ h5 { color: white; }
 
 table { color: #3c4544; width: 350px; }
 
-h3 { color: #ffffff; letter-spacing: .1rem; }
+.th-sm { height: 3.5em; }
+
+.h-th { color: #ffffff; letter-spacing: .1rem; color: #ffffff; font-size: 120%; font-family: coolvetica, coolvetica-condensed-rg, Arial, Helvetica, sans-serif; }
 
 .back-grey { background-color: #f2f2f2; }
 
@@ -3308,22 +3308,53 @@ tr, td { padding: 15px; }
 
 h6 { color: #009383; letter-spacing: .08rem; text-align: left; font-size: 90%; font-family: coolvetica, coolvetica-condensed-rg, Arial, Helvetica, sans-serif; }
 
+.s5-form { border-color: #009383; border-radius: 0; }
+
 .p-pricing { color: #ffffff; font-size: 90%; }
 
 figcaption { font-family: Arial, Helvetica, sans-serif; font-size: 90%; }
 
+::-webkit-input-placeholder { font-family: Arial, Helvetica, sans-serif; color: #f2f2f2; font-size: 70%; }
+
+:-ms-input-placeholder { font-family: Arial, Helvetica, sans-serif; color: #f2f2f2; font-size: 70%; }
+
+::-ms-input-placeholder { font-family: Arial, Helvetica, sans-serif; color: #f2f2f2; font-size: 70%; }
+
+::placeholder { font-family: Arial, Helvetica, sans-serif; color: #f2f2f2; font-size: 70%; }
+
 .h3-contacto { color: #009383; }
+
+.info-contact { text-align: center; }
+
+.sec-info, .i-info { color: #009383; font-size: 160%; }
+
+.i-lg { font-size: 180%; }
+
+footer { background-color: #009383; }
+
+.p-footer { width: 230px; float: right; color: #ffffff; font-size: .55rem; }
 
 @media (min-width: 768px) { .form-container { height: 450px; }
   .text-hero { font-size: 140%; }
   .descp-p { font-size: .65rem; }
   h5 { font-size: 90%; }
   .icon { height: 45px; width: 70px; }
-  .text-navbar { display: initial; } }
+  .text-navbar { display: initial; }
+  .h1-img-chart { color: #009383; font-size: 80%; }
+  table { font-size: 80%; border-collapse: separate; width: 100%; border-spacing: 8px; }
+  .p-tbl { font-size: 70%; }
+  .p-pricing { font-size: 75%; line-height: 100%; }
+  .img-chart { width: 90%; }
+  .logo-pay-chart { width: 15%; }
+  .btn-chart { width: 8em; height: 40%; padding: 0; margin-top: 0; margin-bottom: 0; }
+  td { padding: 10px; }
+  .empty-th { background-color: white; }
+  .td-btn { padding: 0; } }
 
 @media (min-width: 992px) { .text-navbar { font-size: 180%; }
   h5 { font-size: 120%; }
   .icon { height: 50px; width: 75px; }
   .fab, .fas { font-size: 150%; }
-  .descp-p { font-size: 80%; } }
+  .descp-p { font-size: 80%; }
+  .info-contact { text-align: left; } }
 /*# sourceMappingURL=main.css.map */
