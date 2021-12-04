@@ -12,7 +12,7 @@
 
 body{
     background-color: white;
-    font-family: coolvetica, coolvetica-condensed-rg, Arial, Helvetica, sans-serif;
+    font-family: $primary-family-font;
     color: $dark-grey;
 }
 
@@ -73,10 +73,6 @@ header{
         line-height: 2rem;
     }
 
-   .hero-text{
-    margin-top: 140px;
-    }   
-
     // Form
     .form-container{
         background-color: $secondary;
@@ -84,27 +80,29 @@ header{
         border-radius: $border-radius-lg;
         width: 310px;
         line-height: 150%;
-    }
+        }
 
         p{ 
-        font-family: helvetica;
+        font-family: $secondary-family-font;
         font-size: 60%;
         line-height: $btn-line-height;
         text-align: justify;
+        line-height: 1.3rem;
         }
 
         .btn-primary{
         background-color: $highlight;
         border: $highlight;
         font-size: $btn-font-size-sm;
-        letter-spacing: .1rem;
         line-height: $btn-line-height;
+        width: $btn-width-lg;
         font-weight: lighter;
-    }
+        letter-spacing: .1rem;
+        }
 
     .mb-3{
         padding-top: 2em;
-    }
+        }
 
     //Caracteristicas
     .index-main{
@@ -117,7 +115,7 @@ header{
         background-position: center center;
         background-color: $primary;
         margin-bottom: 4em;
-    }
+        }
 
         .index-mobile{
             width: 300px;
@@ -139,15 +137,23 @@ header{
             color: white;
         }
 
-// 
+//Table
+
 table{
     color: $font-grey;
     width: 350px;
 }
 
-    h3{
+    .th-sm{
+        height: 3.5em;
+    }
+
+    .h-th{
         color: $secondary;
         letter-spacing: .1rem;
+        color: $secondary;
+        font-size: 120%;
+        font-family: $primary-family-font;
     }
 
     .back-grey{
@@ -156,7 +162,7 @@ table{
 
     .p-tbl{
         font-size: .75rem;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: $secondary-family-font;
         font-weight:bold;
         line-height: 1rem;
     }
@@ -174,16 +180,60 @@ table{
             letter-spacing: .08rem;
             text-align: left;
             font-size: 90%;
-            font-family: coolvetica, coolvetica-condensed-rg, Arial, Helvetica, sans-serif;
+            font-family: $primary-family-font;
+        }
+
+        .s5-form{
+            border-color: $primary;
+            border-radius: 0;
         }
 
     .p-pricing{
         color: $secondary;
         font-size: 90%;
     }
-figcaption{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 90%;
+
+    figcaption{
+        font-family: $secondary-family-font;
+        font-size: 90%;
+    }
+
+    ::placeholder{
+        font-family: $secondary-family-font;
+        color: $light-grey;
+        font-size: 70%;
+    }
+
+// Contacto
+
+.h3-contacto{
+    color: $primary;
+}
+
+.info-contact{
+    text-align: center;
+}
+
+.sec-info, .i-info{
+    color: $primary;
+    font-size: 160%;
+}
+
+.i-lg{
+    font-size: 180%;
+}
+
+// Footer
+
+footer{
+    background-color: $primary;
+}
+
+.p-footer{
+    width: 230px;
+    float: right;
+    color: $secondary;
+    font-size: .55rem;
 }
 
 @media (min-width: 768px) {
@@ -193,12 +243,38 @@ figcaption{
     h5{font-size: 90%;}
     .icon{height: 45px;width: 70px;}
     .text-navbar{display: initial;}
-  }
 
+
+    .h1-img-chart{
+        color: $primary;
+        font-size: 80%;
+    }
+
+    table{ font-size: 80%; border-collapse: separate; width: 100%; border-spacing: 8px;}
+        .p-tbl{font-size: 70%;}
+        .p-pricing{font-size: 75%;line-height: 100%;}
+        .img-chart{width: 90%;}
+        .logo-pay-chart{width: 15%;}
+        .btn-chart{
+            width: 8em;
+            height: 40%;
+            padding: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        td{padding: 10px;}
+        .empty-th{ background-color: white;}
+        .td-btn{padding: 0;}
+        
+    }
   @media (min-width: 992px) {
     .text-navbar{font-size: 180%;}
     h5{font-size: 120%;}
     .icon{height: 50px;width: 75px;}
     .fab,.fas{font-size: 150%;}
     .descp-p{font-size: 80%;}
+    .info-contact{
+        text-align: left;
+    }
+    
   }
