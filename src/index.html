@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="position-absolute">
     <!-- navbar -->
     <nav class="navbar navbar-expand navbar-light bg-light pt-3 mb-4">
       <div class="container-fluid">
@@ -37,7 +37,7 @@
   </header>
 
 <!-- hero section -->
-  <section class="hero d-flex flex-column justify-content-center mb-4"> 
+  <section class="hero position-relative d-flex flex-column justify-content-center mb-4"> 
     <div class="container mt-5">
           
       <div id="overlay" class="position-absolute"></div>
@@ -66,7 +66,7 @@
         <input type="password" class="form-control" id="exampleFormControlPassword1" placeholder="">
       </div>
 
-      <p class= "mt-4 mx-2 mb-sm-3 mt-md-4"> * Al dar clic en registrarse, acepta nuestros términos y condiciones de uso del sistema y el aviso de privacidad.</p>
+      <p class="p-form-warning mt-4 mx-2 mb-sm-3 mt-md-4 text-justify"> * Al dar clic en registrarse, acepta nuestros términos y condiciones de uso del sistema y el aviso de privacidad.</p>
 
       <div class="btn-container d-grid gap-2 col-12 mx-auto d-block mt-sm-3 mb-sm-1 mb-md-4 mt-md-4 text-center">  
         <button type="button" class="btn btn-primary btn-lg">Registrarse</button>
@@ -77,21 +77,27 @@
   </section>
 
 <!-- Caracteristicas -->
-  <section class="index-main pb-2">
+  <section class="index-main position-relative pb-2">
 
     <div class="container pt-5 pb-5 p-md-0">
+
     <div class="row">
       <!--  col 2 mobile picture-->
       <div class="col-sm-12 col-md-6 order-1 order-md-2 p-md-0 col-lg-4">
-        <img class="index-mobile mx-auto d-block mt-4 mb-2" src="/assets/img/index-mobile.png" width="300" alt="-">
+        <img class="index-mobile mx-auto d-block mt-4 mb-2" src="/assets/img/index-mobile.png">
       </div>
 
       <!-- col 1 -->
       <div class="container col-sm order-2 col-md-3 order-md-1 mt-md-5 p-md-0 col-lg-4 p-lg-1">
 
         <div class="row descp-div my-2 p-lg-1">
-          <img class="icon col-sm-12 mx-auto d-block col-lg-3 order-lg-2 mt-md-0 mb-2 mr-md-0 p-lg-0 ml-lg-3" src="/assets/img/dec-anual.png" alt="---">
 
+          <div class="div-icon col-sm-12 mx-auto d-block col-lg-3 order-lg-2 mt-md-0 mb-2 mr-md-0 p-lg-0 ml-lg-3">
+          <img class="icon-img " src="/assets/img/dec-anual.png" alt="">
+          </div>
+
+
+          
           <div class="div-text-main col-sm-12 col-lg-9 order-lg-1 p-md-0 mt-2">
           <h5 class="text-center text-md-right">Obten tu declaración anual:</h5>
 
@@ -100,16 +106,22 @@
           Solo importa tus CFDIs o sube tu e.firma y cuando sea fecha nosotros 
           haremos tu declaración anual.</p>
           </div>
-        </div>
+
+
+      </div>
+
+
         <!--  -->
         <div class="row descp-div my-2 p-lg-1">
-          <img class="icon col-sm-12 mx-auto d-block col-lg-3 order-lg-2 mt-md-0 mb-2 mr-md-0 p-lg-0 ml-lg-3" src="/assets/img/cfdi.png" alt="">
+          <div class="div-icon col-sm-12 mx-auto d-block col-lg-3 order-lg-2 mt-md-0 mb-2 mr-md-0 p-lg-0 ml-lg-3">
+          <img class="icon-img" src="/assets/img/cfdi.png" alt="">
+          </div>
 
           <div class="div-text-main col-sm-12 col-lg-9 order-lg-1 p-md-0 mt-2">
 
             <h5 class="text-center text-md-right">Tus CFDIs siempre a la mano: </h5>
 
-            <p class="descp-p text-center text-md-right mt-2">
+            <p class="descp-p text-center text-md-right mt-2 p-1">
             No importa que cambies de patrón o no te lleguen los CFDIs de tus gastos, 
             aquí siempre vas a tener tus recibos de nómina y tus facturas de gastos 
             a la mano. </p>
@@ -121,7 +133,10 @@
       <!-- col 3  -->
       <div class="container col-sm col-md-3 order-2 order-md-3 mt-md-5 p-md-0 col-lg-4 p-lg-1">
         <div class="row descp-div my-2 p-lg-1">
-          <img class="icon col-sm-12 mx-auto d-block col-lg-3 order-lg-1 mt-md-0 mb-2 ml-md-0 p-lg-0 mr-lg-3" src="/assets/img/estadisticas.png" alt="">
+
+          <div class="div-icon col-sm-12 mx-auto d-block col-lg-3 order-lg-1 mt-md-0 mb-2 ml-md-0 p-lg-0 mr-lg-3">
+          <img class="icon-img" src="/assets/img/estadisticas.png" alt="">
+          </div>
 
           <div class="div-text-main col-sm-12 col-lg-9 order-lg-1 p-md-0 mt-2">
             <h5 class="text-center text-md-left">Estadísticas de tus ingresos:</h5>
@@ -134,7 +149,9 @@
 
     <!--  -->
     <div class="row descp-div my-2 p-lg-1">
-      <img class="icon col-sm-12 mx-auto d-block col-lg-3 order-lg-1 mt-md-0 mb-2 ml-md-0 p-lg-0 mr-lg-3" src="/assets/img/deducciones.png" alt="">
+      <div class="div-icon col-sm-12 mx-auto d-block col-lg-3 order-lg-1 mt-md-0 mb-2 ml-md-0 p-lg-0 mr-lg-3">
+      <img class="icon-img" src="/assets/img/deducciones.png" alt="">
+      </div>
                 
       <div class="div-text-main col-sm-12 col-lg-9 order-lg-1 p-md-0 mt-2">
         <h5 class="text-center text-md-left"> Estadísticas de tus deducciones:</h5>
@@ -145,7 +162,10 @@
     </div>
 
     <div class="row descp-div my-2 p-lg-1">
-      <img class="icon col-sm-12 mx-auto d-block col-lg-3 order-lg-1 mt-md-0 mb-2 ml-md-0 p-lg-0 mr-lg-3" src="/assets/img/cfdi-val.png" alt="">
+      <div class="div-icon col-sm-12 mx-auto d-block col-lg-3 order-lg-1 mt-md-0 mb-2 ml-md-0 p-lg-0 mr-lg-3">
+      <img class="icon-img" src="/assets/img/cfdi-val.png" alt="">
+      </div>
+      
       <div class="div-text-main col-sm-12 col-lg-9 order-lg-1 p-md-0 mt-2">
         <h5 class="text-center text-md-left"> CFDIs válidos:</h5>
         <p class="descp-p text-center text-md-left mt-2">

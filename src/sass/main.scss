@@ -17,7 +17,6 @@ body{
 }
 
 header{
-    position: absolute;
     z-index: 10;
     width: 100vw;
 }
@@ -31,7 +30,7 @@ header{
     }
 
     .nav-item{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         color: $secondary;
     }
 
@@ -48,9 +47,10 @@ header{
         color: $secondary;
         display: none;
     }
+
+
 // hero
 .hero {
-    position: relative;
     background: url(/assets/img/hero-bg.png);
     min-height: 100vh;
     background-size: cover;
@@ -80,41 +80,40 @@ header{
         border-radius: $border-radius-lg;
         width: 310px;
         line-height: 150%;
+    }
+
+        label{
+            font-size: .8em;
+            letter-spacing: .08em;
         }
 
-        p{ 
-        font-family: $secondary-family-font;
-        font-size: 60%;
-        line-height: $btn-line-height;
-        text-align: justify;
-        line-height: 1.3rem;
+        .p-form-warning{ 
+            font-family: $secondary-family-font;
+            font-size: 60%;
+            line-height: $btn-line-height;
+            line-height: 1.8em;
         }
 
         .btn-primary{
-        background-color: $highlight;
-        border: $highlight;
-        font-size: $btn-font-size-sm;
-        line-height: $btn-line-height;
-        width: $btn-width-lg;
-        font-weight: lighter;
-        letter-spacing: .1rem;
+            background-color: $highlight;
+            border: $highlight;
+            font-size: $btn-font-size-sm;
+            line-height: $btn-line-height;
+            width: $btn-width-lg;
+            font-weight: lighter;
+            letter-spacing: .1rem;
         }
 
-    .mb-3{
-        padding-top: 2em;
-        }
 
     //Caracteristicas
     .index-main{
-        margin-top: 5rem;
+        margin: 5em auto 5em auto;
         clip-path: polygon(0% 4%, 100% 0%, 100% 100%, 0% 100%);
         height: 100%;
-        position: relative;
         background: url(/assets/img/pattern-background.png);
         background-size: cover;
         background-position: center center;
         background-color: $primary;
-        margin-bottom: 4em;
         }
 
         .index-mobile{
@@ -122,20 +121,27 @@ header{
         }
         
        .descp-p{
-            padding: 2px;
             color: $white;
             font-size: 90%;
         }
 
-       .icon{
-           height: 60px;
-           width: 85px;
-           flex: 0;
-       }
+        .div-icon{
+            height: 60px;
+            width: 80px;
+            flex: 0;
+        }
+
+        .icon-img{
+            height: 60px;
+            width: 80px;
+            flex: 0;
+            object-fit: contain;
+        }
 
         h5{
             color: white;
         }
+
 
 //Table
 
@@ -239,6 +245,44 @@ footer{
 
 // SISTEMA_INICIO
 
+.navbar-toggler{
+    border: none;
+    // color: white !important;
+    // font-weight: bold;
+    background-image: white;
+}
+
+ .alertas-sect{
+     position: absolute;
+     margin-top: 180px;
+     width: 100%;
+ }
+
+ .sistema-navbar-logo{
+width: 4em;
+height: auto;
+ }
+
+ .alertas{
+    background-color: $light-grey;
+    width: 3em;
+    height: 3em;
+}
+    .h-alertas{
+        color: $primary;
+    }
+
+.sist-navbar-container{
+    background-color: $primary;
+}
+
+// 
+.ingresos-del-mes{
+    width: 8em;
+    height: 8em;
+    box-shadow:black;
+    background-color: blue;
+}
 
 @media (min-width: 768px) {
     .form-container{ height: 450px;}
@@ -274,11 +318,9 @@ footer{
   @media (min-width: 992px) {
     .text-navbar{font-size: 180%;}
     h5{font-size: 120%;}
-    .icon{height: 50px;width: 75px;}
+    .div-icon,.icon-img{height: 50px;width: 55px;}
     .fab,.fas{font-size: 150%;}
     .descp-p{font-size: 80%;}
-    .info-contact{
-        text-align: left;
-    }
+    .info-contact{text-align: left;}
     
   }
