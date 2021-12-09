@@ -177,7 +177,9 @@ table{
             
     tr,td {
         padding:15px;
+        // text-align: center;
     }
+ 
         h6{
             color: $primary;
             letter-spacing: .08rem;
@@ -205,6 +207,15 @@ table{
         font-family: $secondary-family-font;
         color: $light-grey;
         font-size: 70%;
+    }
+
+    .fa-check, .td-hyphen{
+        color:$highlight;
+        font-size: 1.5em;    
+    }
+
+    .td-hyphen{
+        font-size: 3em;
     }
 
 // Contacto
