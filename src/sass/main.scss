@@ -132,13 +132,10 @@ header{
         }
 
         .icon-img{
-            height: 60px;
-            width: 80px;
-            flex: 0;
             object-fit: contain;
         }
 
-        h5{
+        .h5-caracteristicas{
             color: white;
         }
 
@@ -310,6 +307,7 @@ height: auto;
             margin-top: 0;
             margin-bottom: 0;
         }
+        
         td{padding: 10px;}
         .empty-th{ background-color: white;}
         .td-btn{padding: 0;}
@@ -320,7 +318,8 @@ height: auto;
     h5{font-size: 120%;}
     .div-icon,.icon-img{height: 50px;width: 55px;}
     .fab,.fas{font-size: 150%;}
+    // .descp-div{margin-top: 5em !important;}
     .descp-p{font-size: 80%;}
     .info-contact{text-align: left;}
-    
+    // agregar margenes superiores a informacion en caracteristicas
   }
