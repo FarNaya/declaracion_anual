@@ -337,8 +337,20 @@ height: auto;
 .square{
     box-shadow: 3px 7px 4px 0px rgba(0,0,0,0.26);
     // background-image: url(/img/asset-2.png);
-    background: url(/src/assets/img/asset-2.png);
+    // background: url(/src/assets/img/asset-2.png);
 }
+
+// -----------------------------------------------
+//  SISTEMA_PERFIL
+// -----------------------------------------------
+
+// Datos personales
+.h1-datos-personales{
+    color: $primary;
+}
+
+
+
 
 // 
 @media (min-width: 768px) {
