@@ -139,6 +139,11 @@ header{
             color: white;
         }
 
+    .h1-img-chart{
+        color: $primary;
+        font-size: 115%;
+    }
+
 
 //Table
 
@@ -177,7 +182,6 @@ table{
             
     tr,td {
         padding:15px;
-        // text-align: center;
     }
  
         h6{
@@ -196,6 +200,8 @@ table{
     .p-pricing{
         color: $secondary;
         font-size: 90%;
+        font-family: $secondary-family-font;
+        line-height: 150%;
     }
 
     figcaption{
@@ -260,21 +266,57 @@ footer{
     background-image: white;
 }
 
+.nav-link{
+    color: $secondary !important;
+    font-size: 80%;
+    font-weight: lighter;
+    letter-spacing: .08em;
+}
+
+
+// alertas
+
  .alertas-sect{
      position: absolute;
-     margin-top: 180px;
+     margin-top: 100px;
      width: 100%;
  }
+
+ .alertas{
+    background-color: $light-grey;
+    height: 3em;
+    box-shadow: 1px 2px 5px 3px rgba(0,0,0,0.2);
+}
+
+.alertas-box{
+    border-style: solid;
+    border-width: 1px;
+    border-color: $light-grey;
+}
 
  .sistema-navbar-logo{
 width: 4em;
 height: auto;
  }
 
- .alertas{
-    background-color: $light-grey;
-    width: 3em;
-    height: 3em;
+.system-collapse{
+    flex-direction: row-reverse;
+}
+
+.red-exclamation{
+    color: red;
+}
+
+.blue-exclamation{
+    color: blue
+    }
+
+.yellow-exclamation{
+    color: yellow;
+}
+
+.text-alerta {
+ list-style: none;
 }
     .h-alertas{
         color: $primary;
@@ -286,11 +328,34 @@ height: auto;
 
 // 
 .ingresos-del-mes{
-    width: 8em;
+    margin-top: 10em;
+    // width: 10em;
+    width: 100%;
     height: 8em;
     box-shadow:black;
-    background-color: blue;
 }
+
+.ing-header{
+    background-color: $primary;
+    color: $secondary;
+    height: 2em;
+    letter-spacing: .05em;
+}
+
+.ingresos{
+    border-left:  1px solid $light-grey;
+    border-right:  1px solid $light-grey; 
+    border-bottom: 1px solid $light-grey;
+    height: 6em;
+}
+
+.square{
+    // align-items: center;
+    box-shadow: 3px 7px 4px 0px rgba(0,0,0,0.26);
+    // width: 60%;
+}
+
+// 
 
 @media (min-width: 768px) {
     .form-container{ height: 450px;}
@@ -300,15 +365,14 @@ height: auto;
     .icon{height: 45px;width: 70px;}
     .text-navbar{display: initial;}
 
-
-    .h1-img-chart{
-        color: $primary;
-        font-size: 80%;
-    }
+    // .h1-img-chart{
+    //     color: $primary;
+    //     font-size: 80%;
+    // }
 
     table{ font-size: 80%; border-collapse: separate; width: 100%; border-spacing: 8px;}
         .p-tbl{font-size: 70%;}
-        .p-pricing{font-size: 75%;line-height: 100%;}
+        .p-pricing{font-size: 75%;}
         .img-chart{width: 90%;}
         .logo-pay-chart{width: 15%;}
         .btn-chart{
@@ -322,6 +386,11 @@ height: auto;
         td{padding: 10px;}
         .empty-th{ background-color: white;}
         .td-btn{padding: 0;}
+
+
+        .square{
+            width: 90%;
+        }
         
     }
   @media (min-width: 992px) {
@@ -332,5 +401,4 @@ height: auto;
     // .descp-div{margin-top: 5em !important;}
     .descp-p{font-size: 80%;}
     .info-contact{text-align: left;}
-    // agregar margenes superiores a informacion en caracteristicas
   }
