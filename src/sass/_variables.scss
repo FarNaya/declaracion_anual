@@ -1,13 +1,14 @@
 // COLOR
 $orange:   #ff681d;
-// $yellow:  #ffc107;
 $green:    #009383;
-// $teal:    #20c997;
-// $cyan:    #0dcaf0;
 $light-grey: #f2f2f2;
 $white:     #ffffff;
 $dark-grey: #3d4543;
 $font-grey: #3c4544;
+$red-alert: #ef0000;
+$yellow-alert: #fc9500;
+$blue-alert: #068fff;
+
 
 // 
 
@@ -30,10 +31,13 @@ $highlight:     $orange;
 
 // BTN
 $border-radius-lg: .5rem;
-
 $btn-width-lg: 250px;
-
 $btn-font-size-sm: 80%;
 
 $btn-line-height: 2rem;
+
+
+
+$alt-lettering-spacing: .05em;
+$btn-lettering-spacing: .15em;
 

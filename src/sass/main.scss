@@ -11,7 +11,7 @@
 // @import "~sweetalert2/dist/sweetalert2.min.css";
 
 body{
-    background-color: white;
+    background-color: $white;
     font-family: $primary-family-font;
     color: $dark-grey;
 }
@@ -84,7 +84,7 @@ header{
 
         label{
             font-size: .8em;
-            letter-spacing: .08em;
+            letter-spacing: $btn-lettering-spacing;
         }
 
         .p-form-warning{ 
@@ -101,7 +101,7 @@ header{
             line-height: $btn-line-height;
             width: $btn-width-lg;
             font-weight: lighter;
-            letter-spacing: .1rem;
+            letter-spacing: $btn-lettering-spacing;
         }
 
 
@@ -136,7 +136,7 @@ header{
         }
 
         .h5-caracteristicas{
-            color: white;
+            color: $white;
         }
 
     .h1-img-chart{
@@ -158,7 +158,7 @@ table{
 
     .h-th{
         color: $secondary;
-        letter-spacing: .1rem;
+        letter-spacing: $btn-lettering-spacing;
         color: $secondary;
         font-size: 120%;
         font-family: $primary-family-font;
@@ -171,7 +171,7 @@ table{
     .p-tbl{
         font-size: .75rem;
         font-family: $secondary-family-font;
-        font-weight:bold;
+        font-weight: bold;
         line-height: 1rem;
     }
 
@@ -225,13 +225,8 @@ table{
     }
 
 // Contacto
-
 .h3-contacto{
     color: $primary;
-}
-
-.info-contact{
-    text-align: center;
 }
 
 .sec-info, .i-info{
@@ -244,18 +239,18 @@ table{
 }
 
 // Footer
-
 footer{
     background-color: $primary;
 }
 
 .p-footer{
-    width: 230px;
-    float: right;
+    width: 22em;
     color: $secondary;
-    font-size: .55rem;
+    font-size: .75em;
+    letter-spacing: $alt-lettering-spacing;
 }
 
+// --------------------------//
 
 // SISTEMA_INICIO
 
@@ -275,7 +270,6 @@ footer{
 
 
 // alertas
-
  .alertas-sect{
      position: absolute;
      margin-top: 100px;
@@ -292,35 +286,28 @@ footer{
     border-style: solid;
     border-width: 1px;
     border-color: $light-grey;
+    line-height: 150%;
+    font-family: $secondary-family-font;
+    font-weight: 200;
+    font-size: 90%;
 }
 
- .sistema-navbar-logo{
+.sistema-navbar-logo{
 width: 4em;
 height: auto;
  }
 
-.system-collapse{
-    flex-direction: row-reverse;
-}
-
-.red-exclamation{
-    color: red;
-}
-
-.blue-exclamation{
-    color: blue
-    }
-
-.yellow-exclamation{
-    color: yellow;
-}
+// .system-collapse{
+//     flex-direction: row-reverse;
+// }
 
 .text-alerta {
- list-style: none;
-}
-    .h-alertas{
-        color: $primary;
-    }
+    list-style: none;
+   }
+    .h-alertas{ color: $primary;}
+    .red-exclamation{color: $red-alert;}
+    .blue-exclamation{ color: $blue-alert}
+    .yellow-exclamation{color: $yellow-alert;}
 
 .sist-navbar-container{
     background-color: $primary;
@@ -329,8 +316,6 @@ height: auto;
 // 
 .ingresos-del-mes{
     margin-top: 10em;
-    // width: 10em;
-    width: 100%;
     height: 8em;
     box-shadow:black;
 }
@@ -339,7 +324,7 @@ height: auto;
     background-color: $primary;
     color: $secondary;
     height: 2em;
-    letter-spacing: .05em;
+    letter-spacing: $alt-lettering-spacing;
 }
 
 .ingresos{
@@ -351,8 +336,8 @@ height: auto;
 
 .square{
     box-shadow: 3px 7px 4px 0px rgba(0,0,0,0.26);
-    background-image: url(/img/asset-2.png);
-    // b-img not working
+    // background-image: url(/img/asset-2.png);
+    background: url(/src/assets/img/asset-2.png);
 }
 
 // 
@@ -386,6 +371,12 @@ height: auto;
         .square{
             width: 90%;
         }
+
+        .p-footer{
+            width: 25em;
+            font-size: .85em;
+            letter-spacing: .05em;
+        }
         
     }
   @media (min-width: 992px) {
@@ -393,7 +384,6 @@ height: auto;
     h5{font-size: 120%;}
     .div-icon,.icon-img{height: 50px;width: 55px;}
     .fab,.fas{font-size: 150%;}
-    // .descp-div{margin-top: 5em !important;}
     .descp-p{font-size: 80%;}
     .info-contact{text-align: left;}
   }
