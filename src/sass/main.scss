@@ -192,11 +192,9 @@ table{
             font-family: $primary-family-font;
         }
 
-        .s5-form{
-            border-color: $primary;
-            border-radius: 0;
-        }
-
+        .s5-form{border-color: $primary;}
+            
+    
     .p-pricing{
         color: $secondary;
         font-size: 90%;
@@ -293,13 +291,10 @@ footer{
 }
 
 .sistema-navbar-logo{
-width: 4em;
-height: auto;
+    width: 4em;
+    height: auto;
  }
 
-// .system-collapse{
-//     flex-direction: row-reverse;
-// }
 
 .text-alerta {
     list-style: none;
@@ -345,10 +340,28 @@ height: auto;
 // -----------------------------------------------
 
 // Datos personales
-.h1-datos-personales{
+.h2-datos-personales{
     color: $primary;
+    border-top:  1.5px solid $light-grey; 
+    border-bottom: 1.5px solid $light-grey;
 }
 
+.h6-campo-obligatorio{
+    color: $dark-grey;
+}
+
+.p-datos-per{
+    letter-spacing: $alt-lettering-spacing;
+    font-size: 90%;
+    text-indent: 1em;
+}
+
+
+// 
+.red-star{
+    color:$red-alert
+}
+// 
 
 
 
