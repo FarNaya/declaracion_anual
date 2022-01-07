@@ -350,13 +350,12 @@ height: auto;
 }
 
 .square{
-    // align-items: center;
     box-shadow: 3px 7px 4px 0px rgba(0,0,0,0.26);
-    // width: 60%;
+    background-image: url(/img/asset-2.png);
+    // b-img not working
 }
 
 // 
-
 @media (min-width: 768px) {
     .form-container{ height: 450px;}
     .text-hero{font-size: 140%;}
@@ -365,11 +364,7 @@ height: auto;
     .icon{height: 45px;width: 70px;}
     .text-navbar{display: initial;}
 
-    // .h1-img-chart{
-    //     color: $primary;
-    //     font-size: 80%;
-    // }
-
+    
     table{ font-size: 80%; border-collapse: separate; width: 100%; border-spacing: 8px;}
         .p-tbl{font-size: 70%;}
         .p-pricing{font-size: 75%;}
