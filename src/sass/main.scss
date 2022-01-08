@@ -77,8 +77,8 @@ header{
     .form-container{
         background-color: $secondary;
         height: 395px;
-        border-radius: $border-radius-lg;
         width: 310px;
+        border-radius: $border-radius-lg;
         line-height: 150%;
     }
 
@@ -183,7 +183,6 @@ table{
 
     th{
         background-color: $primary;
-        border-radius: 6px;
     }
             
     tr,td {
@@ -360,13 +359,24 @@ footer{
 }
 
 
-// 
-// .red-star{
-//     color:$red-alert
-// }
-// 
+// tabla
 
+.sistema-table{
+    margin-top: 10em;
+}
 
+.tabla-ingresos{
+    border-collapse: separate;
+}
+.sis-th-sm{
+    height: 2em;
+}
+.sis-h-th{
+    font-size: 60%;
+    letter-spacing: .03em;
+    color: $white;
+    font-weight: 200;
+}
 
 // 
 @media (min-width: 768px) {
@@ -379,7 +389,8 @@ footer{
 
     
     table{ font-size: 80%; border-collapse: separate; width: 100%; border-spacing: 8px;}
-        .p-tbl{font-size: 70%;}
+        .p-tbl{font-size: .9em;}
+        .tbl-title{font-size:  100%;}
         .p-pricing{font-size: 75%;}
         .img-chart{width: 90%;}
         .logo-pay-chart{width: 15%;}
