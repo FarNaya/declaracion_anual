@@ -158,6 +158,7 @@ table{
     width: 350px;
 }
 
+
     .th-sm{
         height: 3.5em;
     }
@@ -358,18 +359,23 @@ footer{
     text-indent: 1em;
 }
 
-
 // tabla
-
 .sistema-table{
     margin-top: 10em;
 }
 
+// .table{
+//     padding: .2rem !important;
+// }
+
 .tabla-ingresos{
     border-collapse: separate;
+    border-spacing: 2.5px;
 }
+
 .sis-th-sm{
     height: 2em;
+    padding: .1em !important;
 }
 .sis-h-th{
     font-size: 60%;
@@ -378,7 +384,8 @@ footer{
     font-weight: 200;
 }
 
-// 
+
+// queries
 @media (min-width: 768px) {
     .form-container{ height: 450px;}
     .text-hero{font-size: 140%;}
@@ -388,7 +395,7 @@ footer{
     .text-navbar{display: initial;}
 
     
-    table{ font-size: 80%; border-collapse: separate; width: 100%; border-spacing: 8px;}
+    table{ font-size: 80%; border-collapse: separate; border-spacing: 8px;}
         .p-tbl{font-size: .9em;}
         .tbl-title{font-size:  100%;}
         .p-pricing{font-size: 75%;}
@@ -407,10 +414,8 @@ footer{
         .td-btn{padding: 0;}
 
 
-        .square{
-            width: 90%;
-        }
-
+        .square{width: 90%;}
+            
         .p-footer{
             width: 25em;
             font-size: .85em;
