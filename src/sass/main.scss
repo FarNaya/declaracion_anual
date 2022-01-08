@@ -272,10 +272,9 @@ footer{
     letter-spacing: .08em;
 }
 
-
 // alertas
  .alertas-sect{
-     margin-top: 5px;
+    //  margin-top: 5px;
      width: 100%;
  }
 
@@ -302,10 +301,10 @@ footer{
 
 
 .text-alerta {list-style: none;}
-    .h-alertas{ color: $primary;}
-    .red-exclamation{color: $red-alert;}
-    .blue-exclamation{ color: $blue-alert}
-    .yellow-exclamation{color: $yellow-alert;}
+.h-alertas{ color: $primary;}
+.red-exclamation{color: $red-alert;}
+.blue-exclamation{ color: $blue-alert}
+.yellow-exclamation{color: $yellow-alert;}
 
 .sist-navbar-container{
     background-color: $primary;
