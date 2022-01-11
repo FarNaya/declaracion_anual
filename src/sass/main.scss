@@ -353,7 +353,7 @@ footer{
 .p-datos-per{
     letter-spacing: $alt-lettering-spacing;
     font-size: 90%;
-    text-indent: 1em;
+    // text-indent: 1em;
 }
 
 // tabla
@@ -380,6 +380,10 @@ footer{
     color: $white;
 }
 
+
+.cont-d-personales{
+    box-shadow: 3px 7px 4px 0px rgba(0,0,0,0.26); 
+}
 
 // queries
 @media (min-width: 768px) {
