@@ -10,76 +10,61 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-    <header>
-        <nav class="sistema-navbar navbar my-4 px-3 navbar-expand-lg navbar-light bg-light">
+<header>
+  <nav class="sistema-navbar navbar my-4 px-3 navbar-expand-lg navbar-light bg-light">
+    <div class="container sist-navbar-container">
+      <a class="navbar-brand" href="#"><img class="sistema-navbar-logo px-2" alt="declaracion-anual-logo" src="/assets/img/declaracion-anual-logo-blanco.png" width="90"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <div class="container sist-navbar-container">
-             <a class="navbar-brand" href="#"><img class="sistema-navbar-logo px-2" alt="declaracion-anual-logo" src="/assets/img/declaracion-anual-logo-blanco.png" width="90"></a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+      <div class="collapse navbar-collapse system-collapse flex-row-reverse" id="navbarNav">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#">Mis Ingresos</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#">Mis documentos</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="sistema_perfil.html">Perfil</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link">Pago</a>
+          </li>
+          <li class="nav-item nav-link">
+          <i class="fas fa-user-circle"></i>
+          <a >Fareida Naya</a>
+          </li>
+        </ul>
+      </div>
 
+    </div>
+  </nav>
+</header>
 
-              <div class="collapse navbar-collapse system-collapse flex-row-reverse" id="navbarNav">
-            
-                <ul class="navbar-nav text-center">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Mis Ingresos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Mis documentos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="sistema_perfil.html">Perfil</a>
-                  </li>
+<!-- MAIN -->
+<main class="datos-personales mb-4">
+  <div class="container cont-d-personales">
+    <div class="row">
 
-                  <li class="nav-item">
-                    <a class="nav-link">Pago</a>
-                  </li>
+      <div class="col-12 my-2">
+        <h2 class="h2-datos-personales">Datos Personales</h2>
+      </div>
 
-                  <li class="nav-item nav-link">
-                  <i class="fas fa-user-circle"></i>
-                  <a >Fareida Naya</a>
-                </li>
-                </ul>
+      <div class="col-12 mt-2">
+        <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><h6 class="h6-campo-obligatorio float-left mt-1">Campo obligatorio</h6>
+      </div>
 
-              </div>
+      <div class="col-12 mt-3">
+        <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><p class="p-datos-per float-left mt-1">Nombre</p>
+        <input type="text" class="form-control rounded-0" id="exampleFormControlName2" placeholder="">
+      </div>
 
-            </div>
-          </nav>
-  </header>
-
-<section class="datos-personales mb-4">
-    <div class="container cont-d-personales">
-        <div class="row">
-
-            <div class="col-12 my-2">
-            <h2 class="h2-datos-personales">Datos Personales</h2>
-            </div>
-
-            <div class="col-12 mt-2">
-               <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><h6 class="h6-campo-obligatorio float-left mt-1">Campo obligatorio</h6>
-            </div>
-
-            <div class="col-12 mt-3">
-                <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><p class="p-datos-per float-left mt-1">Nombre</p>
-                <!-- <div class="m-sm-2 m-md-3 "> -->
-                    <!-- <label class=" mt-md-2" for="exampleFormControlName2" class="form-label"></label> -->
-                    <!-- <label class="" for="exampleFormControlName2" class="form-label"></label> -->
-                    <input type="text" class="form-control rounded-0" id="exampleFormControlName2" placeholder="">
-                  <!-- </div> -->
-              </div>
-
-
-            <!-- <div class="col-12 mt-3">
-                <p class="p-datos-per">* Apellido paterno</p>
-                    <input type="text" class="form-control rounded-0" id="exampleFormControlName2" placeholder="">
-            </div> -->
-
-       <div class="col-12 mt-3 col-md-6">
+      <div class="col-12 mt-3 col-md-6">
         <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><p class="p-datos-per float-left mt-1">Número de celular</p>
         <input type="text" class="form-control rounded-0" id="idsample1" placeholder= "( _  _  _ )  _  _  _  _  _  _  _">
       </div>
@@ -94,22 +79,20 @@
         <input type="text" class="form-control rounded-0" id="idsample3" placeholder="">
       </div>
 
-
       <div class="col-12 mt-3 col-md-6">
         <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><p class="p-datos-per float-left mt-1">Confirmar contraseña</p>
         <input type="text" class="form-control rounded-0" id="idsample4" placeholder="">
       </div>
 
-
       <div class="btn-container-2 d-grid gap-2 col-12 mx-auto d-block mt-4 mb-sm-1 mb-md-4 mt-md-4 text-center">  
         <button type="button" class="btn btn-primary btn-lg">Guardar</button>
       </div>
 
-  </div>
+    </div>
 
-    <!--  -->
-
+    <!-- -->
     <div class="row mt-5">
+
       <div class="col-12 my-2">
         <h2 class="h2-datos-personales">Datos fiscales</h2>
       </div>
@@ -123,8 +106,8 @@
       <input type="text" class="form-control rounded-0" id="idsample6" placeholder="">
     </div>
     
-<!--  -->
-    <div class="col-12 mt-3 col-md-6">
+<!-- col -->
+  <div class="col-12 mt-3 col-md-6">
 
       <div class="form-group">
         <span class="float-left mr-1 mt-0 pt-0 red-star">*</span>
@@ -135,93 +118,112 @@
           <option>Solo recibo ingresos por salario</option>
           <option>Recibo ingresos por salario y otras fuentes</option>
         </select>
-
       </div>
 
     </div>
-<!--  -->
+
     <div class="col-12 mt-3 col-md-6">
       <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><p class="p-datos-per float-left mt-1">CLABE interbancaria</p>
       <input type="text" class="form-control rounded-0" id="idsample8" placeholder="">
     </div>
 
-<!--  -->
-<div class="col-12 mt-3 col-md-6">
-      
-  <div class="form-group">
-    <span class="float-left mr-1 mt-0 pt-0 red-star">*</span>
-    <label for="inputState">Banco</label>
-    
-    <select id="inputState" class="form-control">
-      <option selected>Elije una opción</option>
-      <option>-</option>
-      <option>-</option>
-    </select>
-  </div>
+  
 
-</div>
+    <div class="col-12 mt-3 col-md-6">
 
+      <div class="form-group">
+        <span class="float-left mr-1 mt-0 pt-0 red-star">*</span>
+        <label for="inputState">Banco</label>
+        
+        <select id="inputState-2" class="form-control">
+          <option selected>Elije una opción</option>
+          <option>-</option>
+          <option>-</option>
+        </select>
+      </div>
 
-    <!--  -->
-<div class="row">
-
-    <div class="col-12 my-4">
-      <h4 class="h2-datos-personales">e.firma</h4>
     </div>
 
-    <div class="col-12 mt-2">
-      <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><h6 class="h6-campo-obligatorio float-left mt-1">Campo obligatorio</h6>
-   </div>
+    <!-- </div> -->
+  <!-- </div> -->
+
+    <!--  -->
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 my-4">
+        <h4 class="h2-datos-personales">e.firma</h4>
+      </div>
+
+      <div class="col-12 mt-2">
+          <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><h6 class="h6-campo-obligatorio float-left mt-1">Campo obligatorio</h6>
+      </div>
 
 
-   <div class="col-12 mt-3 col-md-4">
-    <p class="p-datos-per float-left mt-1">Número de serie</p>
-    <input type="text" class="form-control rounded-0" id="idsample10" placeholder="00000000000000000000000000000000">
+      <div class="col-12 mt-3 col-md-4">
+        <p class="p-datos-per float-left mt-1">Número de serie</p>
+        <input type="text" class="form-control rounded-0" id="idsample10" placeholder="00000000000000000000000000000000">
+      </div>
+
+      <div class="col-12 mt-3 col-md-4">
+        <p class="p-datos-per float-left mt-1">Inicio de vigencia</p>
+        <input type="text" class="form-control rounded-0" id="idsample11" placeholder="YYYY/MM/DD  00:00">
+      </div>
+
+      <div class="col-12 mt-3 col-md-4">
+        <p class="p-datos-per float-left mt-1">Fin de vigencia</p>
+        <input type="text" class="form-control rounded-0" id="idsample12" placeholder="YYYY/MM/DD  00:00">
+    </div>
+
+    </div>
   </div>
-
-  <div class="col-12 mt-3 col-md-4">
-    <p class="p-datos-per float-left mt-1">Inicio de vigencia</p>
-    <input type="text" class="form-control rounded-0" id="idsample11" placeholder="YYYY/MM/DD  00:00">
-  </div>
-
-  <div class="col-12 mt-3 col-md-4">
-    <p class="p-datos-per float-left mt-1">Fin de vigencia</p>
-    <input type="text" class="form-control rounded-0" id="idsample12" placeholder="YYYY/MM/DD  00:00">
-  </div>
-
-<!--  -->
-
-  <!-- <div class="col-12 mt-3 col-md-4">
-    <p class="p-datos-per float-left mt-1">Inicio de vigencia</p>
-    <input type="text" class="form-control rounded-0" id="idsample13" placeholder="YYYY/MM/DD  00:00">
-  </div>
-
-  <div class="col-12 mt-3 col-md-4">
-    <p class="p-datos-per float-left mt-1">Fin de vigencia</p>
-    <input type="text" class="form-control rounded-0" id="idsample14" placeholder="YYYY/MM/DD  00:00">
-  </div> -->
-<div class="row mt-4">
-  <div class="custom-file col-12 col-md-5">
-    <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
-    <input type="file" class="custom-file-input" id="customFileLang" lang="es">
-  </div>
-
-</div>
-  <!--  -->
- 
   <!--  -->
 
+  <div class="container mb-4">
+    <div class="row mt-4 ">
 
-  <div class="btn-container-2 d-grid gap-2 col-12 mx-auto d-block mt-4 mb-sm-1 mb-md-4 mt-md-4 text-center">  
-    <button type="button" class="btn btn-primary btn-lg">Guardar</button>
-  </div>
+      <form class="col-12 col-md-6">
+        <div class="form-group ">
+          <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><label for="exampleFormControlFile1"> Certificado</label>
+          <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        </div>
+      </form>
 
 
-</div>
 
-</div>
-</div>    
-</section>
+      <div class="col-12 mt-3 col-md-6">
+        <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><p class="p-datos-per float-left mt-1">Contraseña</p>
+        <input type="text" class="form-control rounded-0" id="idsample3" placeholder="">
+      </div>
+    </div>
+
+
+    <form class="col-12 col-md-6">
+      <div class="form-group ">
+        <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><label for="exampleFormControlFile1"> Llave</label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+    </form>
+
+    </div>
+
+
+
+
+    <div class="container">
+
+    <div class="row mb-4">
+      <div class="btn-container-2 d-grid gap-2 col-12 mx-auto d-block mt-4 mb-sm-1 mb-md-4 mt-md-4 text-center">  
+        <button type="button" class="btn btn-primary btn-lg">Guardar</button>
+      </div>
+
+
+      
+    </div>
+
+  </div>    
+</main>
 
 
 
