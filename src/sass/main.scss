@@ -157,6 +157,7 @@ table{
     width: 350px;
 }
 
+
     .th-sm{
         height: 3.5em;
     }
@@ -185,6 +186,10 @@ table{
             
     tr,td {
         padding:15px;
+    }
+
+    .full-indx-table{
+        width: 100%;
     }
 //  corregir h6
         h6{
@@ -249,6 +254,11 @@ footer{
     color: $secondary;
     font-size: .75em;
     letter-spacing: $alt-lettering-spacing;
+}
+
+.a-footer, a:hover{
+    text-decoration: underline;
+    color: white;
 }
 
 // --------------------------//
@@ -361,10 +371,6 @@ footer{
     margin-top: 10em;
 }
 
-// .table{
-//     padding: .2rem !important;
-// }
-
 .tabla-ingresos{
     border-collapse: separate;
     border-spacing: 2.5px;
@@ -379,7 +385,6 @@ footer{
     letter-spacing: .03em;
     color: $white;
 }
-
 
 .cont-d-personales{
     box-shadow: 3px 7px 4px 0px rgba(0,0,0,0.26); 
