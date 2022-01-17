@@ -261,9 +261,9 @@ footer{
     color: white;
 }
 
-// --------------------------//
-
+// -----------------------------------------------
 // SISTEMA_INICIO
+// -----------------------------------------------
 
 .navbar-toggler{
     border: none;
@@ -402,7 +402,27 @@ label{
     font-size: 90%;
 }
 
-// 
+// -----------------------------------------------
+// SISTEMA_PAGO
+// -----------------------------------------------
+
+// #container-pago{
+//     margin-top: 5em;
+// }
+
+
+.p-pago{
+    margin: .2em auto .2em auto;
+
+}
+
+.historial-de-pagos{
+    box-shadow: 3px 7px 4px 0px rgba(0,0,0,0.26); 
+}
+
+
+
+
 
 
 // queries
