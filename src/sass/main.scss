@@ -407,7 +407,7 @@ label{
 // -----------------------------------------------
 
 // #container-pago{
-//     margin-top: 5em;
+//     height: 100vh;
 // }
 
 
@@ -417,12 +417,18 @@ label{
 }
 
 .historial-de-pagos{
-    box-shadow: 3px 7px 4px 0px rgba(0,0,0,0.26); 
+    box-shadow: 3px 7px 4px 0px rgba(0,0,0,0.26);
+    padding: 1em;
 }
 
+.tabla-pagos{
+    border-spacing: 10px 2px;
+}
 
-
-
+.btn-payment{
+    background-color: $light-grey;
+    color: $primary;
+}
 
 
 // queries
