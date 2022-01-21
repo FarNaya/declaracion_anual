@@ -30,7 +30,7 @@ header{
     }
 
     .nav-item{
-        font-size: 1.4rem;
+        font-size: 1.4em;
         color: $secondary;
     }
 
@@ -46,6 +46,10 @@ header{
     .text-navbar{
         color: $secondary;
         display: none;
+    }
+
+    .fa-instagram-square, .fa-facebook, .fa-user{
+        font-size: 1.4em;
     }
 
 
@@ -156,6 +160,7 @@ table{
     color: $font-grey;
     width: 350px;
 }
+
 
 
     .th-sm{
@@ -324,6 +329,9 @@ footer{
     box-shadow:black;
 }
 
+.h1-ingresos{
+    font-size: 4em;
+}
 .ing-header{
     background-color: $primary;
     color: $secondary;
@@ -337,6 +345,10 @@ footer{
     border-bottom: 1px solid $light-grey;
     height: 9em;
 }
+
+    .logout{
+    font-size: 1.4em;
+    }
 
 .square{
     box-shadow: 3px 7px 4px 0px rgba(0,0,0,0.26);
@@ -356,8 +368,15 @@ footer{
     border-bottom: 1.5px solid $light-grey;
 }
 
+.h4-e-firma{
+    color: $primary;
+    border: black;
+    width: 4em;
+}
+
 .h6-campo-obligatorio{
     color: $dark-grey;
+
 }
 
 .p-datos-per{
@@ -406,9 +425,9 @@ label{
 // SISTEMA_PAGO
 // -----------------------------------------------
 
-// #container-pago{
-//     height: 100vh;
-// }
+#container-pago{
+    height: 100vh;
+}
 
 
 .p-pago{
@@ -423,13 +442,16 @@ label{
 
 .tabla-pagos{
     border-spacing: 10px 2px;
+
 }
 
 .btn-payment{
     background-color: $light-grey;
     color: $primary;
-}
+    font-size: 1.3em;
+    letter-spacing: .09em;
 
+}
 
 // queries
 @media (min-width: 768px) {
@@ -439,6 +461,9 @@ label{
     h5{font-size: 90%;}
     .icon{height: 45px;width: 70px;}
     .text-navbar{display: initial;}
+    .fa-instagram-square, .fa-facebook, .fa-user{
+        font-size: 150%;
+    }
 
     
     table{ font-size: 80%; border-collapse: separate; border-spacing: 8px;}
@@ -469,11 +494,12 @@ label{
         }
         // 
 
-        .sis-h-th {
-            font-size: 110%;
-        }
-        
+        .sis-h-th { font-size: 110%;}
+        .btn-payment{display:block; margin-left: 0;}
+        .tabla-pagos{width: 100%;}
+        #container-pago{margin-top: 10em;}
     }
+
   @media (min-width: 992px) {
     .text-navbar{font-size: 180%;}
     h5{font-size: 120%;}
@@ -481,4 +507,11 @@ label{
     .fab,.fas{font-size: 150%;}
     .descp-p{font-size: 80%;}
     .info-contact{text-align: left;}
+    .sistema-table{margin-top: 15em;}
+    .tabla-ingresos{width: 70%;}
+    .tabla-pagos{width: 100%;}
+ 
+    
+
+    
   }
