@@ -161,8 +161,6 @@ table{
     width: 350px;
 }
 
-
-
     .th-sm{
         height: 3.5em;
     }
@@ -272,7 +270,6 @@ footer{
 
 .navbar-toggler{
     border: none;
-    // color: white !important;
     background-image: white;
 }
 
@@ -452,6 +449,24 @@ label{
     letter-spacing: .09em;
 
 }
+
+// -----------------------------------------------
+// SISTEMA_DOCUMENTOS
+// -----------------------------------------------
+.sec-navbar-nav{
+    border-top:  1px solid $light-grey; 
+    border-bottom: 1px solid $light-grey;
+    // color: red;
+}
+
+// .sec-navbar-nav{
+// }
+
+.sec-nav-link {
+    color: $secondary-navbar!important;
+}
+
+
 
 // queries
 @media (min-width: 768px) {
