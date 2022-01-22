@@ -459,14 +459,13 @@ label{
     // color: red;
 }
 
-// .sec-navbar-nav{
-// }
+.main-docs{
+    height: 100vh;
+}
 
 .sec-nav-link {
     color: $secondary-navbar!important;
 }
-
-
 
 // queries
 @media (min-width: 768px) {
