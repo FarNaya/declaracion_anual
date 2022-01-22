@@ -173,10 +173,6 @@ table{
         font-family: $primary-family-font;
     }
 
-    .back-grey{
-        background-color: $light-grey;
-    }
-
     .p-tbl{
         font-size: .75rem;
         font-family: $secondary-family-font;
@@ -465,6 +461,11 @@ label{
 
 .sec-nav-link {
     color: $secondary-navbar!important;
+}
+
+
+.td-download-view, .fa-download{
+    color: $highlight;
 }
 
 // queries
