@@ -435,7 +435,6 @@ label{
 
 .tabla-pagos{
     border-spacing: 10px 2px;
-
 }
 
 .btn-payment{
@@ -452,7 +451,6 @@ label{
 .sec-navbar-nav{
     border-top:  1px solid $light-grey; 
     border-bottom: 1px solid $light-grey;
-    // color: red;
 }
 
 .main-docs{
@@ -463,11 +461,24 @@ label{
     color: $secondary-navbar!important;
 }
 
-
 .td-download-view, .fa-download{
     color: $highlight;
 }
 
+.table-sistema{
+    width: 200%;
+    border-collapse: separate;
+    border-spacing: 5px 2px;
+    // padding: 10%;
+}
+
+ .tbody-sistema{
+     font-size: .5em;
+ }
+
+.thead-sistema{
+    font-size: 100% !important;
+}
 // queries
 @media (min-width: 768px) {
     .form-container{ height: 450px;}
@@ -514,6 +525,24 @@ label{
         .tabla-pagos{width: 100%;}
         #container-pago{margin-top: 10em;}
     }
+
+
+    // sistema documentos{
+.table-sistema{
+    width: 100%;
+    // border-collapse: separate;
+    // border-spacing: 5px 2px;
+    padding: initial;
+}
+
+.tbody-sistema,
+.thead-sistema{
+    font-size: 100%;
+}
+
+// .thead-sistema{
+//    font-size: 1.2em;
+// }
 
   @media (min-width: 992px) {
     .text-navbar{font-size: 180%;}
