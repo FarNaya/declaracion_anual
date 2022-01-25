@@ -350,6 +350,19 @@ footer{
     background-repeat: no-repeat;
 }
 
+.fa-caret-up, .fa-caret-down{
+    color: $primary;
+    // background-color: lightgrey;
+}
+
+// .div-button{
+//     width: 100%;
+//     background-color: lightgrey;
+// }
+.open{
+    -webkit-appearance: none !important;
+    background: none;
+}
 // -----------------------------------------------
 //  SISTEMA_PERFIL
 // -----------------------------------------------
