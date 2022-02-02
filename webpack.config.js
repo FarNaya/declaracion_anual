@@ -129,6 +129,16 @@ module.exports = {
       inject: "body",
       filename: "sistema_perfil.html"
     }),
+    new HtmlWebpackPlugin({
+      template: "src/sistema_documentos_recibos.html",
+      inject: "body",
+      filename: "sistema_documentos_recibos.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "src/sistema_documentos_otros.html",
+      inject: "body",
+      filename: "sistema_documentos_otros.html"
+    }),
     
     new webpack.ProvidePlugin({
       $: "jquery",
