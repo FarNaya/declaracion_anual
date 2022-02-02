@@ -278,14 +278,13 @@ footer{
 
 // alertas
  .alertas-sect{
-    //  margin-top: 5px;
-     width: 100%;
+    width: 100%;
  }
 
  .alertas{
     background-color: $light-grey;
     height: 3em;
-    box-shadow: 1px 2px 5px 3px rgba(0,0,0,0.2);
+    box-shadow: 1px 2px 5px 3px rgba(0,0,0,0.1);
     letter-spacing: .06em;
 }
 
@@ -299,6 +298,28 @@ footer{
     font-size: 90%;
 }
 
+.open, .close{
+    font-size: 1.5em;
+    opacity: 1;
+    border: none;
+    outline:none;
+    background-color: transparent; 
+}
+
+    .fa-caret-up, .fa-caret-down{
+        color: $primary;
+    }
+
+.no-alerta{
+    background: $orange;
+    width: 25px;
+    height: 25px ;
+    border-radius: 50%;
+    color: $secondary;
+    padding-top: 2.5px;
+}
+
+
 .sistema-navbar-logo{
     width: 4em;
     height: auto;
@@ -306,7 +327,7 @@ footer{
 
 
 .text-alerta {list-style: none;}
-.h-alertas{ color: $primary; width: 90%;}
+.h-alertas{ color: $primary;}
 .red-exclamation{color: $red-alert;}
 .blue-exclamation{ color: $blue-alert}
 .yellow-exclamation{color: $yellow-alert;}
@@ -348,18 +369,7 @@ footer{
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-.fa-caret-up, .fa-caret-down{
-    color: $primary;
-}
-
-.open, .close{
-        font-size: 2em;
-        opacity: 1;
-        border: none;
-        outline:none;
-        background-color: transparent; 
-}
+ 
 // -----------------------------------------------
 //  SISTEMA_PERFIL
 // -----------------------------------------------
@@ -430,7 +440,6 @@ label{
 #container-pago{
     height: 100vh;
 }
-
 
 .p-pago{
     margin: .2em auto .2em auto;
