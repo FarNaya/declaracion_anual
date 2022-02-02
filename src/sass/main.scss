@@ -306,7 +306,7 @@ footer{
 
 
 .text-alerta {list-style: none;}
-.h-alertas{ color: $primary;}
+.h-alertas{ color: $primary; width: 90%;}
 .red-exclamation{color: $red-alert;}
 .blue-exclamation{ color: $blue-alert}
 .yellow-exclamation{color: $yellow-alert;}
@@ -338,7 +338,6 @@ footer{
     border-bottom: 1px solid $light-grey;
     height: 9em;
 }
-
     .logout{
     font-size: 1.4em;
     }
@@ -355,13 +354,7 @@ footer{
 }
 
 .open, .close{
-        float: right;
-        font-size: 1.5rem;
-        font-weight: 700;
-        line-height: 1;
-        color: #000;
-        padding: .5em  !important;
-        // text-shadow: 0 1px 0 #fff;
+        font-size: 2em;
         opacity: 1;
         border: none;
         outline:none;
@@ -392,7 +385,6 @@ footer{
 .p-datos-per{
     letter-spacing: $alt-lettering-spacing;
     font-size: 90%;
-    // text-indent: 1em;
 }
 
 // tabla
