@@ -11,33 +11,27 @@
 // @import "~sweetalert2/dist/sweetalert2.min.css";
 
 body{
+    min-height: 100vh;
     background-color: $white;
     font-family: $primary-family-font;
     color: $dark-grey;
 }
 
-header{
-    z-index: 10;
-    width: 100vw;
-}
-
-    .bg-light{
-        background-color: transparent !important;
-    }
-
-    .navbar{
-        background-color: $primary;
-    }
+header{width: 100%;}
+    
+.header-index{z-index: 10;}
+    
+    .bg-light{ background-color: transparent !important;}
+       
+    .navbar{background-color: $primary;}
 
     .nav-item{
         font-size: 1.4em;
         color: $secondary;
     }
 
-    .fab, .fas{
-        color: $secondary;
-    }
-
+    .fab, .fas{color: $secondary; }
+        
     .fab:hover,
     .fas:hover{
         color: $highlight;
@@ -51,7 +45,6 @@ header{
     .fa-instagram-square, .fa-facebook, .fa-user{
         font-size: 1.4em;
     }
-
 
 // hero
 .hero {
@@ -114,7 +107,6 @@ header{
             letter-spacing: $btn-lettering-spacing;
         }
 
-
     //Caracteristicas
     .index-main{
         margin: 5em auto 5em auto;
@@ -126,10 +118,8 @@ header{
         background-color: $primary;
         }
 
-        .index-mobile{
-            width: 300px;
-        }
-        
+        .index-mobile{width: 300px;}
+            
        .descp-p{
             color: $white;
             font-size: 90%;
@@ -141,19 +131,14 @@ header{
             flex: 0;
         }
 
-        .icon-img{
-            object-fit: contain;
-        }
-
-        .h5-caracteristicas{
-            color: $white;
-        }
-
+        .icon-img{object-fit: contain;}
+            
+        .h5-caracteristicas{color: $white; }
+            
     .h1-img-chart{
         color: $primary;
         font-size: 115%;
     }
-
 
 //Table
 table{
@@ -161,9 +146,12 @@ table{
     width: 350px;
 }
 
-    .th-sm{
-        height: 3.5em;
-    }
+table{
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+    .th-sm{height: 3.5em;}
 
     .h-th{
         color: $secondary;
@@ -179,17 +167,12 @@ table{
         line-height: 1rem;
     }
 
-    th{
-        background-color: $primary;
-    }
-            
-    tr,td {
-        padding:15px;
-    }
-
-    .full-indx-table{
-        width: 100%;
-    }
+    th{background-color: $primary;}
+        
+    tr,td {padding:15px;}
+        
+    .full-indx-table{width: 100%;}
+        
 //  corregir h6
         h6{
             color: $primary;
@@ -225,9 +208,8 @@ table{
         font-size: 1.5em;    
     }
 
-    .td-hyphen{
-        font-size: 3em;
-    }
+    .td-hyphen{font-size: 3em;}
+        
 
 // Contacto
 .h3-contacto{
@@ -239,17 +221,15 @@ table{
     font-size: 160%;
 }
 
-.i-lg{
-    font-size: 180%;
-}
-
-// Footer
-footer{
-    background-color: $primary;
-}
+.i-lg{font-size: 180%;}
+    
+// -----------------------------------------------
+// FOOTER
+// -----------------------------------------------
+footer{background-color: $primary; margin-top: 0;}
 
 .p-footer{
-    width: 22em;
+    width: 20em;
     color: $secondary;
     font-size: .75em;
     letter-spacing: $alt-lettering-spacing;
@@ -276,11 +256,18 @@ footer{
     letter-spacing: .08em;
 }
 
-// alertas
- .alertas-sect{
-    width: 100%;
- }
+// 
 
+// #main{
+//     min-height: 100vh;
+// }
+
+// #sect-ingresos{
+//     height: 70em;
+// }
+// alertas
+// .container-alertas{width: 100%; height: 70em}
+   
  .alertas{
     background-color: $light-grey;
     height: 3em;
@@ -306,10 +293,8 @@ footer{
     background-color: transparent; 
 }
 
-    .fa-caret-up, .fa-caret-down{
-        color: $primary;
-    }
-
+.fa-caret-up, .fa-caret-down{color: $primary;}
+         
 .no-alerta{
     background: $orange;
     width: 25px;
@@ -319,12 +304,10 @@ footer{
     padding-top: 2.5px;
 }
 
-
 .sistema-navbar-logo{
     width: 4em;
     height: auto;
  }
-
 
 .text-alerta {list-style: none;}
 .h-alertas{ color: $primary;}
@@ -336,16 +319,17 @@ footer{
     background-color: $primary;
 }
 
-// 
+// cuadro
 .ingresos-del-mes{
-    margin-top: 7em;
-    height: 8em;
-    box-shadow:black;
+    margin-top: 5em;
+    height: 12em;
+    // box-shadow:black;
 }
 
 .h1-ingresos{
     font-size: 4em;
 }
+
 .ing-header{
     background-color: $primary;
     color: $secondary;
@@ -370,6 +354,13 @@ footer{
     background-repeat: no-repeat;
 }
  
+
+// table
+.sistema-table-inicio{margin-top: 5em; margin-bottom: 5em;}
+.tabla-ingresos{width: 150%;}
+
+
+
 // -----------------------------------------------
 //  SISTEMA_PERFIL
 // -----------------------------------------------
@@ -387,10 +378,7 @@ footer{
     width: 4em;
 }
 
-.h6-campo-obligatorio{
-    color: $dark-grey;
-
-}
+.h6-campo-obligatorio{ color: $dark-grey;}
 
 .p-datos-per{
     letter-spacing: $alt-lettering-spacing;
@@ -399,12 +387,7 @@ footer{
 
 // tabla
 .sistema-table{
-    margin-top: 10em;
-}
-
-.tabla-ingresos{
-    border-collapse: separate;
-    border-spacing: 2.5px;
+    margin-top: 5em;
 }
 
 .sis-th-sm{
@@ -437,22 +420,15 @@ label{
 // SISTEMA_PAGO
 // -----------------------------------------------
 
-#container-pago{
-    height: 100vh;
-}
+#container-pago{height: 100vh;}
+    
 
-.p-pago{
-    margin: .2em auto .2em auto;
 
-}
-
+.p-pago{ margin: .2em auto .2em auto;}
+   
 .historial-de-pagos{
     box-shadow: 3px 7px 4px 0px rgba(0,0,0,0.26);
     padding: 1em;
-}
-
-.tabla-pagos{
-    border-spacing: 10px 2px;
 }
 
 .btn-payment{
@@ -460,12 +436,13 @@ label{
     color: $primary;
     font-size: 1.3em;
     letter-spacing: .09em;
-
 }
 
 // -----------------------------------------------
 // SISTEMA_DOCUMENTOS
 // -----------------------------------------------
+.sistema-table{margin-top: 5em;}
+
 .sec-navbar-nav{
     border-top:  1px solid $light-grey; 
     border-bottom: 1px solid $light-grey;
@@ -483,21 +460,24 @@ label{
     color: $highlight;
 }
 
-.table-sistema{
-    width: 200%;
-    border-collapse: separate;
-    border-spacing: 5px 2px;
-    // padding: 10%;
-}
-
- .tbody-sistema{
-     font-size: .5em;
- }
+.table-sistema{width: 100%;}
+    
+// .tbody-sistema{font-size: .5em;}
 
 .thead-sistema{
     font-size: 100% !important;
 }
-// queries
+
+// 
+.table-otros-documentos{
+    max-width: 80%;
+    min-width: 600px;
+}
+
+// -----------------------------------------------
+// QUERIES
+// -----------------------------------------------
+
 @media (min-width: 768px) {
     .form-container{ height: 450px;}
     .text-hero{font-size: 140%;}
@@ -509,8 +489,7 @@ label{
         font-size: 150%;
     }
 
-    
-    table{ font-size: 80%; border-collapse: separate; border-spacing: 8px;}
+    table{font-size: 80%;}
         .p-tbl{font-size: .9em;}
         .tbl-title{font-size:  100%;}
         .p-pricing{font-size: 75%;}
@@ -527,8 +506,6 @@ label{
         td{padding: 10px;}
         .empty-th{ background-color: white;}
         .td-btn{padding: 0;}
-
-
         .square{width: 90%;}
             
         .p-footer{
@@ -537,31 +514,23 @@ label{
             letter-spacing: .05em;
         }
         // 
-
         .sis-h-th { font-size: 110%;}
         .btn-payment{display:block; margin-left: 0;}
         .tabla-pagos{width: 100%;}
         #container-pago{margin-top: 10em;}
+
+
+        // .alertas-sect, .container-alertas{
+        //     height: 35vh;
+        // }
+   
+    // sistema documentos
+    .table-sistema{
+        width: 100%;
+        padding: initial;
     }
 
-
-    // sistema documentos{
-.table-sistema{
-    width: 100%;
-    // border-collapse: separate;
-    // border-spacing: 5px 2px;
-    padding: initial;
-}
-
-.tbody-sistema,
-.thead-sistema{
-    font-size: 100%;
-}
-
-// .thead-sistema{
-//    font-size: 1.2em;
-// }
-
+    }
   @media (min-width: 992px) {
     .text-navbar{font-size: 180%;}
     h5{font-size: 120%;}
@@ -569,11 +538,12 @@ label{
     .fab,.fas{font-size: 150%;}
     .descp-p{font-size: 80%;}
     .info-contact{text-align: left;}
-    .sistema-table{margin-top: 15em;}
+    .sistema-table{margin-top: 10em;}
     .tabla-ingresos{width: 70%;}
     .tabla-pagos{width: 100%;}
- 
-    
 
-    
+    // .alertas-sect, .container-alertas{
+    //     height: 25em;
+    // }
+
   }
