@@ -373,7 +373,7 @@ label{
 // -----------------------------------------------
 
 #container-pago{height: 100vh;}
-.p-pago{ margin: .2em auto .2em auto;}
+.p-pago{margin: .2em auto .2em auto;}
    
 .historial-de-pagos{
     box-shadow: 3px 7px 4px 0px rgba(0,0,0,0.26);
@@ -396,29 +396,20 @@ label{
     border-bottom: 1px solid $light-grey;
 }
 
-// 
-.main-docs{height: 100vh;}
-    // 
-
-.sec-nav-link { color: $secondary-navbar!important;}
-.td-download-view, .fa-download{color: $highlight;}
+.sec-nav-link {color: $secondary-navbar!important;}
 
 // tabla
-.sistema-table{margin-top: 8em; width: 150%;}
+.sistema-table{max-width: 300%;}
 
 .sis-th-sm{
     height: 2em;
     padding: .1em !important;
 }
+
 .sis-h-th{
-    font-size: 60%;
+    font-size: 70%;
     letter-spacing: .03em;
     color: $white;
-}
-
-// .table-sistema{width: 100%;}
-.thead-sistema{
-    font-size: 80% !important;
 }
 
 // 
@@ -426,12 +417,17 @@ label{
     max-width: 80%;
     min-width: 600px;
 }
-
+// ?
 
 .font-content-table{
     font-family: $secondary-family-font;
     font-size: 60%;
 }
+.th-download-view{ min-width: 100px;}
+
+.td-download-view, .fa-download, 
+.view-icon,.download-icon{
+    color: $primary; font-size: 1.3em;}
 
 // -----------------------------------------------
 // QUERIES
@@ -481,8 +477,9 @@ label{
     .ingresos-del-mes{height: 90%;}
     .square{width: 100%;height: 90%;}
     
-    // sistema documentos
-    .table-sistema{width: 100%;padding: initial;}
+    // sistema_documentos
+    .sistema-table{width: 100%;padding: initial;}
+    .font-content-table{font-size: 90%;}
 }
 
 @media (min-width: 992px) {
@@ -492,11 +489,16 @@ label{
     .fab,.fas{font-size: 150%;}
     .descp-p{font-size: 80%;}
     .info-contact{text-align: left;}
-    .sistema-table{margin-top: 10em;}
+    // .sistema-table{margin-top: 10em;}
     .tabla-ingresos{width: 70%;}
     .tabla-pagos{width: 100%;}
 
     .ing-header {font-size: 100%; height: 3em;}
     .ingresos-del-mes{height: 70%; width: 90%;}
-    .square{width: 85%;height: 70%;} 
+    .square{width: 85%;height: 70%;}
+
+    .font-content-table{font-size: 100%;}
+    .sistema-table{max-width: 100%;}
+    .td-download-view, .fa-download,
+    .view-icon,.download-icon{font-size: 1.2em;}
 }
