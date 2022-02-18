@@ -160,7 +160,7 @@ table{
         line-height: 1rem;
     }
 
-    th{background-color: $primary;}      
+    .th{background-color: $primary;}      
     tr,td {padding:15px;}      
     .full-indx-table{width: 100%;}
         
@@ -434,6 +434,7 @@ label{
 .view-download-cell{
     width: 105px;
 }
+// 
 
 // -----------------------------------------------
 // QUERIES
