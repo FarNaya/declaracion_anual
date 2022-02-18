@@ -15,7 +15,7 @@ body{
     background-color: $white;
     font-family: $primary-family-font;
     color: $dark-grey;
-}
+    }
 
 header{width: 100%;}
     
@@ -44,6 +44,8 @@ header{width: 100%;}
     .fa-instagram-square, .fa-facebook, .fa-user{
         font-size: 1.4em;
     }
+
+    .tbl-title{color: $primary;}
 
 // hero
 .hero {
@@ -172,7 +174,6 @@ table{
 
     .s5-form{border-color: $primary;}
             
-    
     .p-pricing{
         color: $secondary;
         font-size: 90%;
@@ -412,13 +413,6 @@ label{
     color: $white;
 }
 
-// 
-.table-otros-documentos{
-    max-width: 80%;
-    min-width: 600px;
-}
-// ?
-
 .font-content-table{
     font-family: $secondary-family-font;
     font-size: 60%;
@@ -428,6 +422,18 @@ label{
 .td-download-view, .fa-download, 
 .view-icon,.download-icon{
     color: $primary; font-size: 1.3em;}
+
+// .th-download-view{
+//     max-width: 100px;
+// }
+
+#tble-doc-otros{
+    width: 200%;
+}
+
+// .view-download-cell{
+//     max-width: 100px;
+// }
 
 // -----------------------------------------------
 // QUERIES
