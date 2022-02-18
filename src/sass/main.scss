@@ -215,7 +215,11 @@ table{
 // -----------------------------------------------
 // FOOTER
 // -----------------------------------------------
-footer{background-color: $primary; margin-top: 0;}
+footer{
+    background-color: $primary; 
+    bottom: 0;
+    height: 6em;
+}
 
 .p-footer{
     width: 20em;
@@ -510,6 +514,10 @@ label{
     .td-download-view, .fa-download,
     .view-icon,.download-icon{font-size: 1.2em;}
 
- 
+    // Footer
+.p-footer {
+  width: 40em;
+  font-size: 1em;
+}
     
 }
