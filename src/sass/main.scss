@@ -423,17 +423,13 @@ label{
 .view-icon,.download-icon{
     color: $primary; font-size: 1.3em;}
 
-// .th-download-view{
-//     max-width: 100px;
-// }
-
 #tble-doc-otros{
     width: 200%;
 }
 
-// .view-download-cell{
-//     max-width: 100px;
-// }
+.view-download-cell{
+    width: 105px;
+}
 
 // -----------------------------------------------
 // QUERIES
@@ -486,6 +482,12 @@ label{
     // sistema_documentos
     .sistema-table{width: 100%;padding: initial;}
     .font-content-table{font-size: 90%;}
+    #tble-doc-otros{
+        width: 100%;
+    }
+    .view-download-cell{
+        width: 120px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -507,4 +509,7 @@ label{
     .sistema-table{max-width: 100%;}
     .td-download-view, .fa-download,
     .view-icon,.download-icon{font-size: 1.2em;}
+
+ 
+    
 }
