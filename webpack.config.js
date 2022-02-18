@@ -139,6 +139,11 @@ module.exports = {
       inject: "body",
       filename: "sistema_documentos_otros.html"
     }),
+    new HtmlWebpackPlugin({
+      template: "src/sistema_ingresos_comparativa.html",
+      inject: "body",
+      filename: "sistema_ingresos_comparativa.html"
+    }),
     
     new webpack.ProvidePlugin({
       $: "jquery",
