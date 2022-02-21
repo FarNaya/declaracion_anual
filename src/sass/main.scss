@@ -423,44 +423,70 @@ table{
 // SISTEMA_DOCUMENTOS
 // -----------------------------------------------
 
-.sec-navbar-nav{
-    border-top:  1px solid $light-grey; 
-    border-bottom: 1px solid $light-grey;
+.sistema-nav-sec{
+    ul{
+        border-top:  1px solid $light-grey; 
+        border-bottom: 1px solid $light-grey;
+        line-height: 300%;
+        font-size: 1.1em;
+
+        a {
+            color: $secondary-navbar!important;
+        }
+    }
+
 }
 
-.sec-nav-link {color: $secondary-navbar!important;}
+// DATOS PERSONALES//
+.sistema-table, .sistema_doc_otros, .sistema_doc_recibos{
+    max-width: 300%;
 
-// tabla
-.sistema-table{max-width: 300%;}
+    th{
+        height: 2em;
+        padding: .1em !important;
+    
 
-.sis-th-sm{
-    height: 2em;
-    padding: .1em !important;
+        p{
+        font-size: 70%;
+        letter-spacing: .03em;
+        color: $white;
+        }
+
+        .th-download-view{ 
+            min-width: 100px;
+        }
+
+    }
+
+    tbody{
+
+        p{
+            font-family: $secondary-family-font;
+            font-size: 60%;
+        }
+
+        i{
+            color: $primary; font-size: 1.2em;
+        }
+
+    }
 }
 
-.sis-h-th{
-    font-size: 70%;
-    letter-spacing: .03em;
-    color: $white;
-}
-
-.font-content-table{
-    font-family: $secondary-family-font;
-    font-size: 60%;
-}
-.th-download-view{ min-width: 100px;}
-
-.td-download-view, .fa-download, 
-.view-icon,.download-icon{
-    color: $primary; font-size: 1.3em;}
+// -----------------------------------------------
+// SISTEMA_DOCUMENTOS_OTROS
+// -----------------------------------------------
 
 #tble-doc-otros{
     width: 200%;
+
+
+    .view-download-cell{
+        width: 105px;
+    }
+
 }
 
-.view-download-cell{
-    width: 105px;
-}
+// 
 
 .custom-checkbox .custom-control-input~ .custom-control-label::before {
     border: 1px solid red !important;

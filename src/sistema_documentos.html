@@ -10,67 +10,68 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </head>
 <body>
-<header>
-  <nav class="sistema-navbar navbar my-4 px-3 navbar-expand-lg navbar-light bg-light">
-    <div class="container sist-navbar-container">
-      <a class="navbar-brand" href="#"><img class="sistema-navbar-logo px-2" alt="declaracion-anual-logo" src="/assets/img/declaracion-anual-logo-blanco.png" width="90"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="fas fa-bars"></span>
-      </button>
 
-      <div class="collapse navbar-collapse system-collapse flex-row-reverse" id="navbarNav">
-        <ul class="navbar-nav text-center">
-
-          <li class="nav-item mx-3">
-          <a class="nav-link active" aria-current="page" href="sistema_inicio.html">Inicio</a>
-          </li>
-          <li class="nav-item mx-3">
-          <a class="nav-link" href="sistema_ingresos.html">Mis Ingresos</a>
-          </li>
-          <li class="nav-item mx-3">
-          <a class="nav-link" href="#">Mis documentos</a>
-          </li>
-          <li class="nav-item mx-3">
-          <a class="nav-link" href="sistema_perfil.html">Perfil</a>
-          </li>
-          <li class="nav-item mx-3">
-          <a class="nav-link" href="sistema_pago.html">Pago</a>
-          </li>
-          <li class="nav-item nav-link mx-3 cerrar-sesion">
-            <i class="fas fa-user-circle"></i>
-            <a class="nav-item logout">Cerra sesión</a>
-          </li>
-        </ul>
+  <header>
+    <nav class="sistema-navbar navbar my-4 px-3 navbar-expand-lg navbar-light bg-light">
+      <div class="container sist-navbar-container ">
+        <a class="navbar-brand" href="#"><img class="px-2 py-1" alt="declaracion-anual-logo" src="/assets/img/declaracion-anual-logo-blanco.png" width="90"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fas fa-bars"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse system-collapse flex-row-reverse" id="navbarNav">
+          <ul class="navbar-nav text-center">
+  
+            <li class="mx-3">
+            <a class="active" aria-current="page" href="sistema_inicio.html">Inicio</a>
+            </li>
+            <li class="mx-3">
+            <a href="sistema_ingresos.html">Mis Ingresos</a>
+            </li>
+            <li class="mx-3">
+            <a href="sistema_documentos.html">Mis documentos</a>
+            </li>
+            <li class="mx-3">
+            <a href="#">Perfil</a>
+            </li>
+            <li class="mx-3">
+            <a href="sistema_pago.html">Pago</a>
+            </li>
+            <li class="mx-3">
+              <i class="fas fa-user-circle"></i>
+              <a>Cerra sesión</a>
+            </li>
+          </ul>
+        </div>
+  
       </div>
-
-    </div>
-  </nav>
-</header>
+    </nav>
+  </header>
 
 <!-- MAIN  -->
 <main style="min-height: 100vh;">
-<div class="container">
-  <!--  -->
-<nav class="sistema-navbar navbar mt-5 my-4 px-3 navbar-expand-lg navbar-light bg-light align-items-center">
-    <div class="container sist-navbar-container-2">
-
-      <div class="navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav sec-navbar-nav text-center mx-auto">
-
-          <li class="nav-item sec-nav-item mx-5">
-          <a class="nav-link sec-nav-link active" aria-current="page" href="#">Mis comprobantes fiscales</a>
-          </li>
-          <li class="nav-item sec-nav-item mx-5">
-          <a class="nav-link sec-nav-link" href="sistema_documentos_recibos.html">Mis recibos de nómina</a>
-          </li>
-          <li class="nav-item sec-nav-item mx-5">
-          <a class="nav-link sec-nav-link" href="sistema_documentos_otros.html">Otros documentos</a>
-          </li>
-         
-        </ul>
+  <div class="container">
+    <!--  -->
+    <nav class="mt-5 my-4 px-3  align-items-center sistema-nav-sec">
+      <div class="container sist-navbar-container-2">
+  
+        <div>
+          <ul class="navbar-nav sec-navbar-nav text-center mx-auto">
+  
+            <li class="mx-5">
+            <a class="active" aria-current="page" href="#">Mis comprobantes fiscales</a>
+            </li>
+            <li class="mx-5">
+            <a href="sistema_documentos_recibos.html">Mis recibos de nómina</a>
+            </li>
+            <li class="mx-5">
+            <a href="sistema_documentos_otros.html">Otros documentos</a>
+            </li>
+           
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
   <div class="row">
   <div class="col mt-5 mb-5">
@@ -79,17 +80,17 @@
           <table class="table table-hover table-borderless mx-auto table-striped sistema-table">
             <thead>
               <tr>
-                <th scope="col" class="th sis-th-sm rounded-lg"><p class="sis-h-th font-weight-light full-h-th text-center mt-1 mb-2 px-1">ID</p></th>
-                <th scope="col" class="th sis-th-sm rounded-lg"><p class="sis-h-th font-weight-light full-h-th text-center mt-1 mb-2 px-1" style="min-width: 90px;">Emisor</p></th>
-                <th scope="col" class="th sis-th-sm rounded-lg"><p class="sis-h-th font-weight-light full-h-th text-center mt-1 mb-2 px-1" style="min-width: 110px;">Uso de CFDI</p></th>
-                <th scope="col" class="th sis-th-sm rounded-lg"><p class="sis-h-th font-weight-light full-h-th text-center mt-1 mb-2 px-1" style="min-width: 100px;">Forma de pago</p></th>
-                <th scope="col" class="th sis-th-sm rounded-lg"><p class="sis-h-th font-weight-light full-h-th text-center mt-1 mb-2 px-1">Total</p></th>
-                <th scope="col" class="th sis-th-sm rounded-lg"><p class="sis-h-th font-weight-light full-h-th text-center mt-1 mb-2 px-1">Deducible</p></th>
-                <th scope="col" class="th sis-th-sm rounded-lg"><p class="sis-h-th font-weight-light full-h-th text-center mt-1 mb-2 p-tab-docs th-download-view p-0"> Ver  |  Descargar </p></th>
+                <th scope="col" class="th rounded-lg"><p class="font-weight-light full-h-th text-center mt-1 mb-2 px-1">ID</p></th>
+                <th scope="col" class="th rounded-lg"><p class="font-weight-light full-h-th text-center mt-1 mb-2 px-1" style="min-width: 90px;">Emisor</p></th>
+                <th scope="col" class="th rounded-lg"><p class="font-weight-light full-h-th text-center mt-1 mb-2 px-1" style="min-width: 110px;">Uso de CFDI</p></th>
+                <th scope="col" class="th rounded-lg"><p class="font-weight-light full-h-th text-center mt-1 mb-2 px-1" style="min-width: 100px;">Forma de pago</p></th>
+                <th scope="col" class="th rounded-lg"><p class="font-weight-light full-h-th text-center mt-1 mb-2 px-1">Total</p></th>
+                <th scope="col" class="th rounded-lg"><p class="font-weight-light full-h-th text-center mt-1 mb-2 px-1">Deducible</p></th>
+                <th scope="col" class="th rounded-lg"><p class="font-weight-light full-h-th text-center mt-1 mb-2 p-tab-docs th-download-view p-0"> Ver  |  Descargar </p></th>
               </tr>
              </thead>
     
-        <tbody class="tbody-sistema font-content-table text-left">
+        <tbody class="tbody-sistema text-left">
   
         <tr>
           <td class="py-1"><p>01</p></td>
