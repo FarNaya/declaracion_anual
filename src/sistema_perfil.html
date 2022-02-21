@@ -10,78 +10,80 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </head>
 <body>
+
+<div id="sis-perfil" class="container p-0">
 <header>
-  <nav class="sistema-navbar navbar my-4 px-3 navbar-expand-lg navbar-light bg-light">
-    <div class="container sist-navbar-container">
-      <a class="navbar-brand" href="#"><img class="sistema-navbar-logo px-2" alt="declaracion-anual-logo" src="/assets/img/declaracion-anual-logo-blanco.png" width="90"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="fas fa-bars"></span>
-      </button>
-
-      <div class="collapse navbar-collapse system-collapse flex-row-reverse" id="navbarNav">
-        <ul class="navbar-nav text-center">
-
-          <li class="nav-item mx-3">
-          <a class="nav-link active" aria-current="page" href="sistema_inicio.html">Inicio</a>
-          </li>
-          <li class="nav-item mx-3">
-          <a class="nav-link" href="sistema_ingresos.html">Mis Ingresos</a>
-          </li>
-          <li class="nav-item mx-3">
-          <a class="nav-link" href="sistema_documentos.html">Mis documentos</a>
-          </li>
-          <li class="nav-item mx-3">
-          <a class="nav-link" href="#">Perfil</a>
-          </li>
-          <li class="nav-item mx-3">
-          <a class="nav-link" href="sistema_pago.html">Pago</a>
-          </li>
-          <li class="nav-item nav-link mx-3 cerrar-sesion">
-            <i class="fas fa-user-circle"></i>
-            <a class="nav-item logout">Cerra sesión</a>
-          </li>
-        </ul>
+    <nav class="sistema-navbar navbar my-4 px-0 navbar-expand-lg navbar-light bg-light ">
+      <div class="container sist-navbar-container">
+        <a class="navbar-brand" href="#"><img class="px-2 py-1" alt="declaracion-anual-logo" src="/assets/img/declaracion-anual-logo-blanco.png" width="90"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fas fa-bars"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse system-collapse flex-row-reverse" id="navbarNav">
+          <ul class="navbar-nav text-center">
+  
+            <li class="mx-3">
+            <a class="active" aria-current="page" href="sistema_inicio.html">Inicio</a>
+            </li>
+            <li class="mx-3">
+            <a href="sistema_ingresos.html">Mis Ingresos</a>
+            </li>
+            <li class="mx-3">
+            <a href="sistema_documentos.html">Mis documentos</a>
+            </li>
+            <li class="mx-3">
+            <a href="#">Perfil</a>
+            </li>
+            <li class="mx-3">
+            <a href="sistema_pago.html">Pago</a>
+            </li>
+            <li class="mx-3">
+              <i class="fas fa-user-circle"></i>
+              <a>Cerra sesión</a>
+            </li>
+          </ul>
+        </div>
+  
       </div>
-
-    </div>
-  </nav>
+    </nav>
 </header>
 
 <!-- MAIN -->
 <main class="datos-personales mb-4">
-  <div class="container cont-d-personales">
+  <div class="container">
     <div class="row">
 
       <div class="col-12 my-2">
-        <h2 class="h2-datos-personales">Datos Personales</h2>
+        <h2 class="h2">Datos Personales</h2>
       </div>
 
       <div class="col-12 mt-2">
-        <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><h6 class="h6-campo-obligatorio float-left mt-1">Campo obligatorio</h6>
+        <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><h6 class="float-left mt-1">Campo obligatorio</h6>
       </div>
 
       <div class="col-12 mt-3">
-        <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><p class="p-datos-per float-left mt-1">Nombre</p>
+        <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><p class="float-left mt-1">Nombre</p>
         <input type="text" class="form-control rounded-0" id="exampleFormControlName2" placeholder="">
       </div>
 
       <div class="col-12 mt-3 col-md-6">
-        <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><p class="p-datos-per float-left mt-1">Número de celular</p>
+        <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><p class="float-left mt-1">Número de celular</p>
         <input type="text" class="form-control rounded-0" id="idsample1" placeholder= "( _  _  _ )  _  _  _  _  _  _  _">
       </div>
 
       <div class="col-12 mt-3 col-md-6">
-        <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><p class="p-datos-per float-left mt-1">Correo electronico</p>
+        <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><p class="float-left mt-1">Correo electronico</p>
         <input type="text" class="form-control rounded-0" id="idsample2" placeholder="">
       </div>
 
       <div class="col-12 mt-3 col-md-6">
-        <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><p class="p-datos-per float-left mt-1">Contraseña</p>
+        <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><p class="float-left mt-1">Contraseña</p>
         <input type="text" class="form-control rounded-0" id="idsample3" placeholder="">
       </div>
 
       <div class="col-12 mt-3 col-md-6">
-        <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><p class="p-datos-per float-left mt-1">Confirmar contraseña</p>
+        <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><p class="float-left mt-1">Confirmar contraseña</p>
         <input type="text" class="form-control rounded-0" id="idsample4" placeholder="">
       </div>
 
@@ -95,7 +97,7 @@
     <div class="row mt-5">
 
       <div class="col-12 my-2">
-        <h2 class="h2-datos-personales">Datos fiscales</h2>
+        <h2>Datos fiscales</h2>
       </div>
 
       <div class="col-12 mt-2">
@@ -143,32 +145,34 @@
 
     </div>
 
+    </div>
+
     <!--  -->
 
   <div class="container">
     <div class="row">
 
       <div class="col-12 my-4">
-        <h4 class="h4-e-firma float-left">e.firma</h4><hr class="hr-e-firma ">
+        <h4 class="float-left">e.firma</h4><hr class="hr-e-firma ">
       </div>
 
       <div class="col-12 mt-2">
-          <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><h6 class="h6-campo-obligatorio float-left mt-1">Campo obligatorio</h6>
+          <span class="float-left mr-1 mt-0 pt-0 red-star">*</span><h6 class="float-left mt-1">Campo obligatorio</h6>
       </div>
 
 
       <div class="col-12 mt-3 col-md-4">
-        <p class="p-datos-per float-left mt-1">Número de serie</p>
+        <p class="float-left mt-1">Número de serie</p>
         <input type="text" class="form-control rounded-0" id="idsample10" placeholder="00000000000000000000000000000000">
       </div>
 
       <div class="col-12 mt-3 col-md-4">
-        <p class="p-datos-per float-left mt-1">Inicio de vigencia</p>
+        <p class="float-left mt-1">Inicio de vigencia</p>
         <input type="text" class="form-control rounded-0" id="idsample11" placeholder="YYYY/MM/DD  00:00">
       </div>
 
       <div class="col-12 mt-3 col-md-4">
-        <p class="p-datos-per float-left mt-1">Fin de vigencia</p>
+        <p class="float-left mt-1">Fin de vigencia</p>
         <input type="text" class="form-control rounded-0" id="idsample12" placeholder="YYYY/MM/DD  00:00">
     </div>
 
@@ -215,15 +219,15 @@
 
   </div>    
 </main>
+</div>
 
 <footer class="pt-3">
   <div class="container">
-  <img src="/assets/img/declaracion-anual-logo-blanco.png" alt="declaracion-anual-logo" width="65">
-  <p class="p-footer float-right text-right mt-2  mt-md-3">Declaración anual 2021. Todos los derechos reservados.
-  <a  class="p-footer a-footer" href="">Términos</a> y <a class="p-footer a-footer" href="">Condiciones de Privacidad</a></p>
+  <img src="/assets/img/declaracion-anual-logo-blanco.png" alt="declaracion-anual-logo">
+  <p class="float-right text-right mt-2  mt-md-3">Declaración anual 2021. Todos los derechos reservados.
+  <a href="#">Términos</a> y <a href="#">Condiciones de Privacidad</a></p>
   </div>
 </footer>
-
 
 </body>
 </html>

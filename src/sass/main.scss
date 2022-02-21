@@ -358,42 +358,47 @@ table{
 //  SISTEMA_PERFIL
 // -----------------------------------------------
 
-// Datos personales
-.h2-datos-personales{
-    color: $primary;
-    border-top:  1.5px solid $light-grey; 
-    border-bottom: 1.5px solid $light-grey;
+// DATOS PERSONALES//
+#sis-perfil{
+    box-shadow: 3px 7px 4px 0px rgba(0,0,0,0.15);
+    margin-bottom: 6em;
 }
 
-.h4-e-firma{
-    color: $primary;
-    border: black;
-    width: 4em;
+.datos-personales{
+
+    h2{
+        color: $primary;
+        border-top:  1.5px solid $light-grey; 
+        border-bottom: 1.5px solid $light-grey;
+    }
+
+    h6{
+        color: $dark-grey;  
+    }
+
+    p{
+        letter-spacing: $alt-lettering-spacing;
+        font-size: 90%;
+    }
+
+    h4{
+        color: $primary;
+        border: black;
+        width: 4em;
+    }
+
+    .form-control{
+        border-radius: 0;
+        font-weight: 200;
+        color: $font-grey;
+        font-size: 90%;
+    }
+
+    label{
+        letter-spacing: .05em;
+        font-size: 90%;
+    }
 }
-
-.h6-campo-obligatorio{ color: $dark-grey;}
-
-.p-datos-per{
-    letter-spacing: $alt-lettering-spacing;
-    font-size: 90%;
-}
-
-// .cont-d-personales{
-//     box-shadow: 3px 7px 4px 0px rgba(0,0,0,0.26); 
-// }
-
-.form-control{
-    border-radius: 0;
-    font-weight: 200;
-    color: $font-grey;
-    font-size: 90%;
-}
-
-label{
-    letter-spacing: .05em;
-    font-size: 90%;
-}
-
 // -----------------------------------------------
 // SISTEMA_PAGO
 // -----------------------------------------------
@@ -575,6 +580,13 @@ footer{
     .view-download-cell{
         width: 120px;
     }
+
+
+    // #sis-perfil{
+    //     box-shadow: 3px 7px 4px 0px rgba(0,0,0,0.15);
+    //     margin: 1em;
+    //     padding: 0;
+    // }
 }
 
 @media (min-width: 992px) {
