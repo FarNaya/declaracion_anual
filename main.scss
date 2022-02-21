@@ -17,40 +17,8 @@ body{
     color: $dark-grey;
     }
 
-header{
-    width: 100%;
-}
-
-// -----------------------------------------------
-// SISTEMA/_SECONDARY_NAVBAR
-// -----------------------------------------------
-
-.sist-navbar-container{
-    background-color: $primary;
-
-        button, span{
-            border: none;
-            background-image: white;
-            font-size: 1.4em;
-        }
-        
-        img{
-            width: 70px;
-            height: auto;
-        }
-
-        li, a{
-            color: $secondary !important;
-            font-size: 100%;
-            line-height: 300%;
-            font-weight: lighter;
-            letter-spacing: .08em;
-            color: white;
-        }
-
-}
-
-// 
+header{width: 100%;}
+    
 .header-index{z-index: 10;}
     
     .bg-light{ background-color: transparent !important;}  
@@ -244,115 +212,126 @@ table{
 
 .i-lg{font-size: 180%;}
     
+// -----------------------------------------------
+// FOOTER
+// -----------------------------------------------
+footer{
+    background-color: $primary; 
+    bottom: 0;
+    height: 6em;
+}
+
+.p-footer{
+    width: 20em;
+    color: $secondary;
+    font-size: .75em;
+    letter-spacing: $alt-lettering-spacing;
+}
+
+.a-footer, a:hover{
+    text-decoration: underline;
+    color: white;
+}
 
 // -----------------------------------------------
 // SISTEMA_INICIO
 // -----------------------------------------------
 
-// ALERTAS//
-
-.alertas-dropdown{
-
-    .alertas{
-        background-color: $light-grey;
-        height: 3em;
-        box-shadow: 1px 2px 5px 3px rgba(0,0,0,0.1);
-        letter-spacing: .06em;
-    }
-
-    h4{
-        color: $primary;
-    }
-
-    h5{
-        background: $orange;
-        width: 25px;
-        height: 25px ;
-        border-radius: 50%;
-        color: $secondary;
-        padding-top: 2.5px;
-    }
-
-    button{
-        font-size: 1.5em;
-        opacity: 1;
-        border: none;
-        outline:none;
-        background-color: transparent; 
-    }
-
-        i{
-            color: $primary;
-        }
-
-    ul{
-        border-style: solid;
-        border-width: 1px;
-        border-color: $light-grey;
-        line-height: 150%;
-        font-family: $secondary-family-font;
-        font-weight: 200;
-        font-size: 90%;
-
-        li {
-            list-style: none;
-        }
-
-        .red-exclamation{
-            color: $red-alert;
-        }
-        .blue-exclamation{
-            color: $blue-alert
-        }
-        .yellow-exclamation{
-            color: $yellow-alert;
-        }
-    } 
-
+.navbar-toggler{
+    border: none;
+    background-image: white;
 }
 
-// CUADROS DE INGRESOS//
+.nav-link{
+    color: $secondary !important;
+    font-size: 80%;
+    font-weight: lighter;
+    letter-spacing: .08em;
+}
+
+.alertas{
+    background-color: $light-grey;
+    height: 3em;
+    box-shadow: 1px 2px 5px 3px rgba(0,0,0,0.1);
+    letter-spacing: .06em;
+}
+
+.alertas-box{
+    border-style: solid;
+    border-width: 1px;
+    border-color: $light-grey;
+    line-height: 150%;
+    font-family: $secondary-family-font;
+    font-weight: 200;
+    font-size: 90%;
+}
+
+.open, .close{
+    font-size: 1.5em;
+    opacity: 1;
+    border: none;
+    outline:none;
+    background-color: transparent; 
+}
+
+.fa-caret-up, .fa-caret-down{color: $primary;}
+         
+.no-alerta{
+    background: $orange;
+    width: 25px;
+    height: 25px ;
+    border-radius: 50%;
+    color: $secondary;
+    padding-top: 2.5px;
+}
+
+.sistema-navbar-logo{
+    width: 3em;
+    height: auto;
+ }
+
+.text-alerta {list-style: none;}
+.h-alertas{ color: $primary;}
+.red-exclamation{color: $red-alert;}
+.blue-exclamation{ color: $blue-alert}
+.yellow-exclamation{color: $yellow-alert;}
+.sist-navbar-container{background-color: $primary;}
+
+// cuadro
 .ingresos-del-mes{
     margin-top: 5em;
     height: 12em;
-
-    .square{
-        box-shadow: 3px 7px 4px 0px rgba(0,0,0,0.26);
-        background-image: url(/assets/img/asset-2.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 90%;
-        margin: 0 auto 0 auto;
-
-        h6{
-            background-color: $primary;
-            color: $secondary;
-            height: 2.5em;
-            letter-spacing: $alt-lettering-spacing;
-        }
-
-        .ingresos{
-            border-left:  1px solid $light-grey;
-            border-right:  1px solid $light-grey; 
-            border-bottom: 1px solid $light-grey;
-            height: 9em;
-
-            h1{
-                font-size: 4em;
-            }
-        }
-    }
 }
 
-// TABLA//
-.sistema-table-inicio{
-    margin-top: 10em;
-    margin-bottom: 5em;
+.h1-ingresos{font-size: 4em;}
 
-    table{
-        width: 150%;
-    }
+.ing-header{
+    background-color: $primary;
+    color: $secondary;
+    height: 2.5em;
+    letter-spacing: $alt-lettering-spacing;
 }
+
+.ingresos{
+    border-left:  1px solid $light-grey;
+    border-right:  1px solid $light-grey; 
+    border-bottom: 1px solid $light-grey;
+    height: 9em;
+}
+    .logout{font-size: 1.4em;}
+
+.square{
+    box-shadow: 3px 7px 4px 0px rgba(0,0,0,0.26);
+    background-image: url(/assets/img/asset-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%;
+    margin: 0 auto 0 auto;
+}
+ 
+// table
+.sistema-table-inicio{margin-top: 10em; margin-bottom: 5em;}
+.tabla-ingresos{width: 150%;}
 
 // -----------------------------------------------
 //  SISTEMA_PERFIL
@@ -489,34 +468,6 @@ label{
 //   .custom-checkbox .navbar-toggler {
 //     border-color: rgb(255,102,203);
 //   } 
-
-
-
-// -----------------------------------------------
-// FOOTER
-// -----------------------------------------------
-footer{
-    background-color: $primary; 
-    bottom: 0;
-    height: 5em;
-
-    p{
-        width: 26em;
-        color: $secondary;
-        font-size: .6em;
-        letter-spacing: $alt-lettering-spacing;
-    }
-
-    a, a:hover{
-        text-decoration: underline;
-        color: white;
-    }
-
-    img{
-        width: 50px;
-        height: auto;
-    }
-}
 
 // -----------------------------------------------
 // QUERIES
