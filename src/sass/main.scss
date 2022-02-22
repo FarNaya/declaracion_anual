@@ -104,21 +104,21 @@ header{
     background-position: center center;
 
 
-  #overlay{
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $primary;
-    opacity: 0.6;
-    mix-blend-mode: multiply;
-    }
+    #overlay{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $primary;
+        opacity: 0.6;
+        mix-blend-mode: multiply;
+        }
 
-    h1{
-        font-size: 120%;
-        color: $secondary;
-        line-height: 2rem;
-    }
+        h1{
+            font-size: 120%;
+            color: $secondary;
+            line-height: 2rem;
+        }
 
     // Form
 
@@ -200,11 +200,24 @@ table{
     width: 350px;
     border-collapse: separate;
     border-spacing: 5px;
-}
 
-.tbl-title{color: $primary;}
+    h6{
+        color: $primary;
+    }
 
+    p{
+        font-size: .75rem;
+        font-family: $secondary-family-font;
+        line-height: 1rem;
+    }
 
+    tr,td {
+        padding:15px;
+    } 
+
+    th{
+        background-color: $primary;
+    }  
 
     .th-sm{height: 3.5em;}
 
@@ -216,17 +229,12 @@ table{
         font-family: $primary-family-font;
     }
 
-    .p-tbl{
-        font-size: .75rem;
-        font-family: $secondary-family-font;
-        line-height: 1rem;
-    }
+}
 
-    .th{background-color: $primary;}      
-    tr,td {padding:15px;}      
-    .full-indx-table{width: 100%;}
+.full-indx-table{
+    width: 100%;
         
-    .ing-header {
+    h6{
         color: $primary;
         letter-spacing: .08rem;
         text-align: left;
@@ -261,20 +269,29 @@ table{
 
     .td-hyphen{font-size: 3em;}
         
-
+}
 // Contacto
-.h3-contacto{
-    color: $primary;
+
+.contacto-index{
+
+    h4{
+        color: $primary;
+    }
+
+    .info-contact{
+
+        h5, i{
+            color: $primary;
+            font-size: 160%;
+        }
+
+        i{
+            font-size: 180%;
+        }
+
+    }
+
 }
-
-.sec-info, .i-info{
-    color: $primary;
-    font-size: 160%;
-}
-
-.i-lg{font-size: 180%;}
-    
-
 // -----------------------------------------------
 // SISTEMA_INICIO
 // -----------------------------------------------
@@ -509,11 +526,9 @@ table{
 #tble-doc-otros{
     width: 200%;
 
-
     .view-download-cell{
         width: 105px;
     }
-
 }
 
 // 
