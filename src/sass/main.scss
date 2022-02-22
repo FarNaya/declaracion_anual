@@ -22,7 +22,7 @@ header{
 }
 
 // -----------------------------------------------
-// SISTEMA/_SECONDARY_NAVBAR
+// SISTEMA_SECONDARY_NAVBAR
 // -----------------------------------------------
 
 .sist-navbar-container{
@@ -51,33 +51,50 @@ header{
 }
 
 // 
-.header-index{z-index: 10;}
+
+// -----------------------------------------------
+// INDEX
+// -----------------------------------------------
+.header-index{
+    z-index: 10;
+
+    nav{
+        background-color: transparent !important;
+
+        li{
+            font-size: 1.4em;
+            color: $secondary;
+      
+
+            a{
+                padding-right: .5rem;
+                padding-left: .5rem;
+
+                .fab, .fas{
+                    color: $secondary;
+
+                    // .fab:hover,
+                    // .fas:hover{
+                    //     color: $highlight;
+                    // }
+                }
+
+                .fa-instagram-square, .fa-facebook, .fa-user{
+                    font-size: 1.4em;
+                }
+            }
+       
+        }
+
+        h3{
+            color: $secondary;
+            display: none;
+        }
     
-    .bg-light{ background-color: transparent !important;}  
-    .navbar{background-color: $primary;}
-
-    .nav-item{
-        font-size: 1.4em;
-        color: $secondary;
+    
     }
 
-    .fab, .fas{color: $secondary; }
-        
-    .fab:hover,
-    .fas:hover{
-        color: $highlight;
-    }
-
-    .text-navbar{
-        color: $secondary;
-        display: none;
-    }
-
-    .fa-instagram-square, .fa-facebook, .fa-user{
-        font-size: 1.4em;
-    }
-
-    .tbl-title{color: $primary;}
+}
 
 // hero
 .hero {
@@ -85,7 +102,7 @@ header{
     min-height: 100vh;
     background-size: cover;
     background-position: center center;
-}
+
 
   #overlay{
     top: 0;
@@ -97,26 +114,27 @@ header{
     mix-blend-mode: multiply;
     }
 
-    .text-hero{
+    h1{
         font-size: 120%;
         color: $secondary;
         line-height: 2rem;
     }
 
     // Form
+
     .form-container{
         background-color: $secondary;
         height: 395px;
         width: 310px;
         line-height: 150%;
-    }
+    
 
         label{
             font-size: .8em;
             letter-spacing: $btn-lettering-spacing;
         }
 
-        .p-form-warning{ 
+        p{ 
             font-family: $secondary-family-font;
             font-size: 60%;
             line-height: $btn-line-height;
@@ -126,15 +144,19 @@ header{
         .red-star{color:$red-alert}
         .r-star-indx{ font-size: 70%;}
 
-        .btn-primary{
-            background-color: $highlight;
-            border: $highlight;
-            font-size: $btn-font-size-sm;
-            line-height: $btn-line-height;
-            width: $btn-width-lg;
-            font-weight: lighter;
-            letter-spacing: $btn-lettering-spacing;
-        }
+    }
+
+}
+
+.btn-primary{
+    background-color: $highlight;
+    border: $highlight;
+    font-size: $btn-font-size-sm;
+    line-height: $btn-line-height;
+    width: $btn-width-lg;
+    font-weight: lighter;
+    letter-spacing: $btn-lettering-spacing;
+}
 
     //Caracteristicas
     .index-main{
@@ -145,14 +167,9 @@ header{
         background-size: cover;
         background-position: center center;
         background-color: $primary;
-        }
+      
 
         .index-mobile{width: 300px;}
-            
-       .descp-p{
-            color: $white;
-            font-size: 90%;
-        }
 
         .div-icon{
             height: 60px;
@@ -160,13 +177,22 @@ header{
             flex: 0;
         }
 
-        .icon-img{object-fit: contain;}    
-        .h5-caracteristicas{color: $white; }
+        .icon-img{object-fit: contain;}
+
+        h5{
+            color: $white;
+        }
+
+        p{
+            color: $white;
+            font-size: 90%;
+        }
             
     .h1-img-chart{
         color: $primary;
         font-size: 115%;
     }
+}
 
 //Table
 table{
@@ -175,6 +201,10 @@ table{
     border-collapse: separate;
     border-spacing: 5px;
 }
+
+.tbl-title{color: $primary;}
+
+
 
     .th-sm{height: 3.5em;}
 
