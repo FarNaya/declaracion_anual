@@ -563,43 +563,76 @@ footer{
     .text-navbar{display: initial;}
     .fa-instagram-square, .fa-facebook, .fa-user{font-size: 150%;}
 
-    table{font-size: 80%;}
-        .p-tbl{font-size: .9em;}
-        .tbl-title{font-size:  100%;}
-        .p-pricing{font-size: 75%;}
-        .img-chart{width: 90%;}
-        .logo-pay-chart{width: 15%;}
-        .btn-chart{
-            width: 8em;
-            height: 40%;
-            padding: 0;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-        
-        td{padding: 10px;}
-        .empty-th{ background-color: white;}
-        .td-btn{padding: 0;}
-        .square{width: 90%;}
+    // table
+
+    table{
+        font-size: 80%;
+            p{
+                font-size: .9em;
+            }
+
+            h6{
+                font-size:  100%;
+            }
+
+            .p-pricing{font-size: 75%;}
+    
             
-        .p-footer{
-            width: 25em;
-            font-size: .85em;
-            letter-spacing: .05em;
-        }
-        // 
-        .sis-h-th {font-size: 110%;}
+            td{
+                padding: 10px;
+            }
+            .empty-th{
+                background-color: white;
+            }
+            .td-btn{padding: 0;}
+                
+            th{font-size: 110%;}
+
+    }
+
+    .img-chart{width: 90%;}
+    .logo-pay-chart{width: 15%;}
+    .btn-chart{
+        width: 8em;
+        height: 40%;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
         .btn-payment{display:block; margin-left: 0;}
         .tabla-pagos{width: 100%;}
         #container-pago{margin-top: 10em;}
 
-    // sistema inicio
-    .ing-header {font-size:90%;height:2.5em; line-height: 100%;}
-    .ingresos-del-mes{height: 90%;}
-    .square{width: 100%;height: 90%;}
-    
-    // sistema_documentos
-    .sistema-table{width: 100%;padding: initial;}
+        .square{width: 90%;}
+
+// SISTEMA_INICIO//
+    .ingresos-del-mes{
+        height: 90%;
+
+        .square{
+            width: 100%;
+            height: 90%;
+        
+            h6{
+                font-size:90%;
+                height:2.5em;
+                line-height: 100%;
+            }
+        }
+    }
+    .sistema-table{
+        th{
+            p {
+                font-size: 110%;
+            }
+        }
+
+    }
+
+
+// SISTEMA_DOCUMENTOS//
+    .sistema-table{
+        width: 100%;padding: initial;}
     .font-content-table{font-size: 90%;}
     #tble-doc-otros{
         width: 100%;
@@ -608,13 +641,24 @@ footer{
         width: 120px;
     }
 
+// FOOTER//
+    footer{
+        height: 6.5em;
+    
+        p{
+            width: 25em;
+            font-size: .85em;
+            letter-spacing: .05em;
+        }
 
-    // #sis-perfil{
-    //     box-shadow: 3px 7px 4px 0px rgba(0,0,0,0.15);
-    //     margin: 1em;
-    //     padding: 0;
-    // }
+        img{
+            width: 80px;
+            height: auto;
+        }
+    }
+
 }
+
 
 @media (min-width: 992px) {
     .text-navbar{font-size: 180%;}
@@ -624,22 +668,57 @@ footer{
     .descp-p{font-size: 80%;}
     .info-contact{text-align: left;}
     // .sistema-table{margin-top: 10em;}
+
+
     .tabla-ingresos{width: 70%;}
     .tabla-pagos{width: 100%;}
 
-    .ing-header {font-size: 100%; height: 3em;}
-    .ingresos-del-mes{height: 70%; width: 90%;}
-    .square{width: 85%;height: 70%;}
+// SISTEMA_INICIO//
+    .ingresos-del-mes{
+        height: 70%;
+        width: 90%;
 
-    .font-content-table{font-size: 100%;}
-    .sistema-table{max-width: 100%;}
-    .td-download-view, .fa-download,
-    .view-icon,.download-icon{font-size: 1.2em;}
+        .square{
+            width: 85%;
+            height: 70%;
+        
+            h6{
+                font-size:100%;
+                height:3em;
+            }
+        }
 
-    // Footer
-.p-footer {
-  width: 40em;
-  font-size: 1em;
-}
+    }
+
+    // 
+    .sistema-table{
+        max-width: 100%;
+
+            tbody{
+                font-size: 100%;
+            }
+
+            .td-download-view, .fa-download,
+            .view-icon,.download-icon{
+                font-size: 1.2em;
+            }       
+    }
+   
+
+// FOOTER//
+    footer{
+        height: 7em;
+
+        p{
+            width: 25em;
+            font-size: 1em;
+            letter-spacing: .05em;
+        }
+
+        img{
+            width: 90px;
+            height: auto;
+        }
+    }
     
 }
