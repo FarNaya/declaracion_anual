@@ -20,16 +20,15 @@ body{
 header{
     width: 100%;
 }
-
 // -----------------------------------------------
 // SISTEMA_SECONDARY_NAVBAR
 // -----------------------------------------------
 .sist-navbar-container{
     background-color: $primary;
 
-        button, span{
+        button, span, .fas, .fa-bars{
             border: none;
-            background-image: white;
+            color: white;
             font-size: 1.4em;
         }
         
@@ -47,7 +46,22 @@ header{
             color: white;
         }
 }
+// -----------------------------------------------
+// BTN
+// -----------------------------------------------
+.btn{
+    transition: all 0.5s;
+    border: $highlight;
+    background-color: $highlight;
+ }
 
+.btn:hover{
+    background-color: $orange;
+    -webkit-box-shadow: inset 0 0 30px $yellow-alert;
+    -moz-box-shadow: inset 0 0 30px $yellow-alert;
+    box-shadow: inset 0 0 30px $yellow-alert;
+    
+}
 // -----------------------------------------------
 // INDEX
 // -----------------------------------------------
@@ -67,11 +81,12 @@ header{
 
                 .fab, .fas{
                     color: $secondary;
-                    // .fab:hover,
-                    // .fas:hover{
-                    //     color: $highlight;
-                    // }
+                    transition: all .2s ease-in-out;
                 }
+                    .fab:hover,
+                    .fas:hover{
+                        transform: scale(1.2);
+                    }
 
                 .fa-instagram-square, .fa-facebook, .fa-user{
                     font-size: 1.4em;
@@ -131,12 +146,9 @@ header{
         .red-star{color:$red-alert}
         .r-star-indx{ font-size: 70%;}
     }
-
 }
 
 .btn-primary{
-    background-color: $highlight;
-    border: $highlight;
     font-size: $btn-font-size-sm;
     line-height: $btn-line-height;
     width: $btn-width-lg;
@@ -159,12 +171,9 @@ header{
         }
 
         .div-icon{
-            // height: 40px;
-            // width: 50px;
             flex: 0;
        
             img{
-                // object-fit: contain;
                 width: 60px;
                 height: 50px;
             }
@@ -246,7 +255,6 @@ header{
         tr,td {
             padding:15px;
         } 
-
     }
 
 // Full table
@@ -281,44 +289,50 @@ header{
                     font-size: .65rem;
                 }
         }
-           
             .fa-check, .td-hyphen{
                 color:$highlight;
                 font-size: 1.5em;    
             }
     
             .td-hyphen{font-size: 3em;}  
-        }
-       
+        }  
     }
 
 // Contacto
-.contacto-index{
+    .contacto-index{
 
-    h4{
-        color: $primary;
-    }
-    .s5-form{border-color: $primary;}
-                
-    figcaption{
-        font-family: $secondary-family-font;
-        font-size: 90%;
-    }
+        h4{
+            color: $primary;
+        }
 
-    ::placeholder{
-        font-family: $secondary-family-font;
-        color: $light-grey;
-        font-size: 70%;
-    }     
+        label, input{
+            border-color: $primary;
+        }
+                    
+        figcaption{
+            font-family: $secondary-family-font;
+            font-size: 90%;
+        }
 
-    h5, i{
-        color: $primary;
-        font-size: 160%;
-    }
+        ::placeholder{
+            font-family: $secondary-family-font;
+            color: $light-grey;
+            font-size: 70%;
+        }     
 
-    i{
-    font-size: 180%;
-    }
+        h5, i{
+            color: $primary;
+            font-size: 160%;
+        }
+
+        i{
+        font-size: 180%;
+        }
+
+        button{
+            font-size: 1em;
+            width: 10rem;
+        }
 }
 // -----------------------------------------------
 // SISTEMA_INICIO
@@ -331,33 +345,32 @@ header{
         height: 3em;
         box-shadow: 1px 2px 5px 3px rgba(0,0,0,0.1);
         letter-spacing: .06em;
-    }
 
-    h4{
-        color: $primary;
-    }
-
-    h5{
-        background: $orange;
-        width: 25px;
-        height: 25px ;
-        border-radius: 50%;
-        color: $secondary;
-        padding-top: 2.5px;
-    }
-
-    button{
-        font-size: 1.5em;
-        opacity: 1;
-        border: none;
-        outline:none;
-        background-color: transparent; 
-    }
-
-        i{
+        h4{
             color: $primary;
         }
 
+        h5{
+            background: $orange;
+            width: 25px;
+            height: 25px ;
+            border-radius: 50%;
+            color: $secondary;
+            padding-top: 2px;
+        }
+        button{
+            font-size: 1.5em;
+            opacity: 1;
+            border: none;
+            outline:none;
+            background-color: transparent;
+
+            i{
+                color: $primary;
+            }
+        }
+    }
+    
     ul{
         border-style: solid;
         border-width: 1px;
@@ -385,15 +398,15 @@ header{
 
 // CUADROS DE INGRESOS//
 .ingresos-del-mes{
-    margin-top: 5em;
-    height: 12em;
+    height: 14em;
 
     .square{
-        box-shadow: 3px 7px 4px 0px rgba(0,0,0,0.26);
+        box-shadow: 0px 6px 4px 2px rgba(0,0,0,0.2);
         background-image: url(/assets/img/asset-2.png);
         background-size: cover;
         background-repeat: no-repeat;
         width: 90%;
+        height: 11.5em;
         margin: 0 auto 0 auto;
 
         h6{
@@ -401,14 +414,10 @@ header{
             color: $secondary;
             height: 2.5em;
             letter-spacing: $alt-lettering-spacing;
+            font-size: 90%;
         }
 
         .ingresos{
-            border-left:  1px solid $light-grey;
-            border-right:  1px solid $light-grey; 
-            border-bottom: 1px solid $light-grey;
-            height: 9em;
-
             h1{
                 font-size: 4em;
             }
@@ -469,6 +478,7 @@ header{
     label{
         letter-spacing: .05em;
         font-size: 90%;
+        
     }
 }
 // -----------------------------------------------
@@ -506,20 +516,20 @@ header{
             color: $secondary-navbar!important;
         }
     }
-
 }
 
-// DATOS PERSONALES//
+// TABLAS DEL SISTEMA//
+// NO NESTING//
 .sistema-table, .sistema_doc_otros, .sistema_doc_recibos{
     max-width: 300%;
     border-collapse: separate;
-    border-spacing: 3px;
+    border-spacing: 8px;
 
     th{
         background-color: $primary;
         height: 2em;
         padding: .1em !important;
-    
+        // letter-spacing: ;
 
         p{
         font-size: 70%;
@@ -530,7 +540,6 @@ header{
         .th-download-view{ 
             min-width: 100px;
         }
-
     }
 
     tbody{
@@ -541,9 +550,8 @@ header{
         }
 
         i{
-            color: $primary; font-size: 1.2em;
+            color: $primary; font-size: 1.1em;
         }
-
     }
 }
 
@@ -560,7 +568,6 @@ header{
 }
 
 // 
-
 .custom-checkbox .custom-control-input~ .custom-control-label::before {
     border: 1px solid red !important;
 }
@@ -595,15 +602,13 @@ header{
 //     border-color: rgb(255,102,203);
 //   } 
 
-
-
 // -----------------------------------------------
 // FOOTER
 // -----------------------------------------------
 footer{
-    background-color: $primary; 
-    bottom: 0;
     height: 5em;
+    background: url(/assets/img/pattern-background.png);
+    background-color: $primary; 
 
     p{
         width: 26em;
@@ -693,19 +698,19 @@ footer{
 
 // SISTEMA_INICIO//
     .ingresos-del-mes{
-        height: 90%;
 
         .square{
-            width: 100%;
-            height: 90%;
+            width: 90%;
+            height: 8.5em;
         
             h6{
-                font-size:90%;
+                font-size:75%;
                 height:2.5em;
                 line-height: 100%;
             }
         }
     }
+
     .sistema-table{
         th{
             p {
@@ -715,9 +720,27 @@ footer{
     }
 
 // SISTEMA_DOCUMENTOS//
-    .sistema-table{
-        width: 100%;padding: initial;}
-    .font-content-table{font-size: 90%;}
+// NO NESTING
+    .sistema-table, .sistema_doc_otros, .sistema_doc_recibos{
+        width: 100%;
+        padding: initial;
+        
+        th{
+            p{
+                font-size: 80%;
+            }
+               // .font-content-table{font-size: 90%;}
+        }
+
+        tbody{
+            p{
+                font-size: 80%;
+            }
+        }
+      
+    }
+ 
+    // 
     #tble-doc-otros{
         width: 100%;
     }
@@ -773,42 +796,65 @@ footer{
             font-size: .9em;
         }
     }
+
+    .index-chart{
+        .full-indx-table{
+            td{
+                h6{
+                    font-size: 90%;
+                }
+                p{
+                    font-size: .75em;
+                    line-height: 200%; 
+                }
+            }
+        }
+    }
     
     // form
-    .fab,.fas{font-size: 150%;}
+    .fab,.fas{
+        font-size: 150%;
+    }
 
     // .sistema-table{margin-top: 10em;}
-    .tabla-ingresos{width: 70%;}
+    // .tabla-ingresos{width: 70%;}----?
     .tabla-pagos{width: 100%;}
 
 // SISTEMA_INICIO//
     .ingresos-del-mes{
-        height: 70%;
-        width: 90%;
-
         .square{
-            width: 85%;
-            height: 70%;
+            width: 75%;
+            height: 11em;
         
             h6{
-                font-size:100%;
+                font-size:90%;
                 height:3em;
             }
         }
     }
 
-    // 
+// SISTEMA_DOCUMENTOS//
+// NO NESTING
+.sistema-table-inicio{
+    max-width: 75%;
+}
     .sistema-table{
         max-width: 100%;
-
-            tbody{
-                font-size: 100%;
+        th{
+            p{
+               font-size: 90%;
+            }
+        }
+        tbody{
+            p{
+                font-size: 90%;
             }
 
             .td-download-view, .fa-download,
             .view-icon,.download-icon{
-                font-size: 1.2em;
-            }       
+                font-size: 1.1em;
+            }
+        }     
     }
     
 // FOOTER//
