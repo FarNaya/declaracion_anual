@@ -21,7 +21,7 @@ header{
     width: 100%;
 }
 // -----------------------------------------------
-// SISTEMA_SECONDARY_NAVBAR
+// SISTEMA_NAVBAR
 // -----------------------------------------------
 .sist-navbar-container{
     background-color: $primary;
@@ -60,7 +60,6 @@ header{
     -webkit-box-shadow: inset 0 0 30px $yellow-alert;
     -moz-box-shadow: inset 0 0 30px $yellow-alert;
     box-shadow: inset 0 0 30px $yellow-alert;
-    
 }
 // -----------------------------------------------
 // INDEX
@@ -98,9 +97,8 @@ header{
             color: $secondary;
             display: none;
         }
-    }
+   }
 }
-
 // hero
 .hero {
     background: url(/assets/img/hero-bg.png);
@@ -318,15 +316,26 @@ header{
             font-family: $secondary-family-font;
             color: $light-grey;
             font-size: 70%;
-        }     
-
-        h5, i{
-            color: $primary;
-            font-size: 160%;
+        }
+        
+        .back-icon{
+            width: 40px;
+            height: 40px;
+            background-color: $primary;
+            border-radius: 50%;
+       
+            i{
+            padding-top: 8px;
+            color: white;
+            font-size: 25px;
+            }
         }
 
-        i{
-        font-size: 180%;
+        h5{
+            color: $primary;
+            font-size: 160%;
+            letter-spacing: 0.035em;
+            font-weight: lighter;
         }
 
         button{
@@ -529,7 +538,6 @@ header{
         background-color: $primary;
         height: 2em;
         padding: .1em !important;
-        // letter-spacing: ;
 
         p{
         font-size: 70%;
@@ -682,7 +690,21 @@ footer{
             }
         }
     }
-// 
+// Contacto
+    .contacto-index{
+        .back-icon{
+            width: 35px;
+            height: 35px;
+
+            i{
+                font-size: 20px;
+            }
+        }
+        h5{
+            font-size: 120%;
+        }  
+    }
+    //
     .btn-chart{
         width: 8em;
         height: 40%;
@@ -729,15 +751,13 @@ footer{
             p{
                 font-size: 80%;
             }
-               // .font-content-table{font-size: 90%;}
         }
 
         tbody{
             p{
                 font-size: 80%;
             }
-        }
-      
+        }  
     }
  
     // 
@@ -812,9 +832,9 @@ footer{
     }
     
     // form
-    .fab,.fas{
-        font-size: 150%;
-    }
+    // .fab,.fas{
+    //     font-size: 150%;?
+    // }
 
     // .sistema-table{margin-top: 10em;}
     // .tabla-ingresos{width: 70%;}----?
