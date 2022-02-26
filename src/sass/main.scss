@@ -33,7 +33,7 @@ header{
         }
         
         img{
-            width: 70px;
+            width: 60px;
             height: auto;
         }
 
@@ -44,6 +44,13 @@ header{
             font-weight: lighter;
             letter-spacing: .08em;
             color: white;
+        }
+
+        .active{
+            overflow:hidden;
+            border-bottom:10px solid $secondary;
+            padding-bottom:10px;
+            font-size: 1.2em;
         }
 }
 // -----------------------------------------------
@@ -487,7 +494,6 @@ header{
     label{
         letter-spacing: .05em;
         font-size: 90%;
-        
     }
 }
 // -----------------------------------------------
@@ -524,6 +530,13 @@ header{
         a {
             color: $secondary-navbar!important;
         }
+    }
+    .active{
+        overflow:hidden;
+        border-bottom: 5px solid $highlight;
+        font-size: 1.1em;
+        padding-bottom: 3px;
+        color: $primary !important;
     }
 }
 
@@ -830,14 +843,14 @@ footer{
             }
         }
     }
-    
-    // form
-    // .fab,.fas{
-    //     font-size: 150%;?
-    // }
 
-    // .sistema-table{margin-top: 10em;}
-    // .tabla-ingresos{width: 70%;}----?
+    .contacto-index{
+
+        h5{
+            font-size: 150%;
+        }
+    }
+
     .tabla-pagos{width: 100%;}
 
 // SISTEMA_INICIO//
