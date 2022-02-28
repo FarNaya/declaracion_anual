@@ -45,6 +45,11 @@ header{
             letter-spacing: .08em;
             color: white;
         }
+        
+        a:hover{
+           text-decoration: none;
+            
+        }
 
         .active{
             overflow:hidden;
@@ -227,7 +232,7 @@ header{
         color: $font-grey;
         width: 350px;
         border-collapse: separate;
-        border-spacing: 5px;
+        border-spacing: 8px;
 
         th{
             background-color: $primary;
@@ -266,32 +271,36 @@ header{
     .full-indx-table{
         width: 100%;
 
-        thead{
+      thead{
             .empty-th{
                 background-color: white;
             }
 
             p{
-                font-size: 1em;
+                font-size: .9em;
             }
+
             .p-pricing{
-                font-size: .6em;
+                font-size: .55em;
                 font-family: $secondary-family-font;
-                line-height: 150%;
+                line-height: 110%;
             }
         }
         
         td{
-            padding: 10px;
+            padding: 8px;
        
             h6{
                 letter-spacing: .07rem;
                 text-align: left;
                 font-size: 85%;
+                margin-bottom: 0;
                 }
 
                 p{
-                    font-size: .65rem;
+                    font-size: .6rem;
+                    margin-bottom: 5px;
+                    line-height: .9em;
                 }
         }
             .fa-check, .td-hyphen{
@@ -299,7 +308,7 @@ header{
                 font-size: 1.5em;    
             }
     
-            .td-hyphen{font-size: 3em;}  
+            .td-hyphen{font-size: 2em; margin-top: 0;}  
         }  
     }
 
@@ -495,6 +504,7 @@ header{
         letter-spacing: .05em;
         font-size: 90%;
     }
+
 }
 // -----------------------------------------------
 // SISTEMA_PAGO
