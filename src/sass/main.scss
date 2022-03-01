@@ -210,9 +210,18 @@ header{
     }
 
     .logos-payment{
-        img{
-            width: 15%;
-        }
+        height: auto;
+        min-width: 300px;
+        max-width: 400px;
+
+       .amex,.oxxopay, .spei
+       {
+           width: 55px;
+       }
+
+       .visa, .mastercard{
+           width: 40px;
+       }
     }
 
     figure{
@@ -230,7 +239,7 @@ header{
 //Table
     table{
         color: $font-grey;
-        width: 350px;
+        min-width: 350px;
         border-collapse: separate;
         border-spacing: 8px;
 
@@ -666,7 +675,6 @@ footer{
 @media (min-width: 768px) {
 // header-index
     .navbar-nav{
-        // margin-right: 10em;
         i{
             font-size: 150%;
         }
@@ -697,22 +705,44 @@ footer{
         }
     }
 
+    // 
+
     .index-chart{
+  
         figure{
-            img{
-            width: 230px;
-            height: auto;
+            figcaption{
+                font-size: 1rem;
             }
         }
         
-        .logos-payment{
-            width: 100%;
-            
-            img{
-                width: 14%;
+        .logos-payment{  
+            max-width: 450px;
+
+           .amex,.oxxopay, .spei
+           {
+               width: 70px;
+           }
+    
+           .visa, .mastercard{
+               width: 65px;
+           }
+        }
+
+        .full-indx-table{
+            padding: 4px;
+           
+            .fa-check,  .full-indx-table .td-hyphen {
+                font-size: 1em;
+            }
+
+            .btn-chart {
+            width: 7em;
+            height: 40%;
             }
         }
     }
+
+    // 
 // Contacto
     .contacto-index{
         .back-icon{
@@ -841,6 +871,23 @@ footer{
     }
 
     .index-chart{
+        figure{
+            img{
+            width: 280px;
+            }
+        }
+
+        .logos-payment{
+            .amex,.oxxopay, .spei
+            {
+                width: 45px;
+            }
+    
+            .visa, .mastercard{
+                width: 50px;
+            }
+        }
+
         .full-indx-table{
             td{
                 h6{
