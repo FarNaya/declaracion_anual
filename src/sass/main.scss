@@ -117,7 +117,7 @@ header{
     min-height: 100vh;
     background-size: cover;
     background-position: center center;
-
+    z-index: 0;
 
     #overlay{
         top: 0;
@@ -125,14 +125,24 @@ header{
         width: 100%;
         height: 100%;
         background-color: $primary;
-        opacity: 0.6;
+        opacity: 0.7;
         mix-blend-mode: multiply;
         }
 
+    #overlay-white{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $secondary;
+        opacity: 0.2;
+        }
+
         h1{
-            font-size: 120%;
+            font-size: 95%;
             color: $secondary;
-            line-height: 2rem;
+            line-height: 1.8rem;
+            letter-spacing: 0.05em;
         }
 
     // Form
@@ -207,6 +217,7 @@ header{
     h1{
         color: $primary;
         font-size: 115%;
+        letter-spacing: 0.03em;
     }
 
     .logos-payment{
@@ -686,7 +697,8 @@ footer{
 
     .hero{
         h1{
-            font-size: 140%;
+            font-size: 180%;
+            line-height: 2.3rem;
         }
     }
 
@@ -851,6 +863,16 @@ footer{
                 margin-left: 200px !important;
             }
         }
+    }
+
+    .hero{
+         h1{
+            font-size: 200%;
+            line-height: 2.5rem;
+            letter-spacing: 0.05em;
+            margin-top: 4em !important;
+        }
+
     }
 
     .index-main{
