@@ -20,6 +20,10 @@ body{
 header{
     width: 100%;
 }
+
+p{ 
+    letter-spacing: $alt-lettering-spacing;
+}
 // -----------------------------------------------
 // SISTEMA_NAVBAR
 // -----------------------------------------------
@@ -207,7 +211,6 @@ header{
         p{
             color: $white;
             font-size: .9rem;
-            letter-spacing: .03rem;
             line-height: 200%;
         }            
 }
@@ -243,7 +246,7 @@ header{
 
         figcaption{
             font-size: .8rem;
-            letter-spacing: 0.1rem;
+            letter-spacing: $alt-lettering-spacing;
         }
     }
 
@@ -260,7 +263,6 @@ header{
 
             p{
                 color: $secondary;
-                letter-spacing: $btn-lettering-spacing;
                 color: $secondary;
                 font-size: 120%;
                 font-family: $primary-family-font;
@@ -268,7 +270,6 @@ header{
 
             .p-pricing{
                 font-size: .8rem;
-                letter-spacing: .05rem;
             }
         } 
 
@@ -403,6 +404,7 @@ header{
             color: $secondary;
             padding-top: 2px;
         }
+
         button{
             font-size: 1.5em;
             opacity: 1;
@@ -503,7 +505,6 @@ header{
     }
 
     p{
-        letter-spacing: $alt-lettering-spacing;
         font-size: 90%;
     }
 
@@ -562,7 +563,7 @@ header{
         }
     }
     .active{
-        overflow:hidden;
+        overflow: hidden;
         border-bottom: 5px solid $highlight;
         font-size: 1.1em;
         padding-bottom: 3px;
@@ -584,7 +585,6 @@ header{
 
         p{
         font-size: 70%;
-        letter-spacing: .03em;
         color: $white;
         }
 
@@ -665,7 +665,6 @@ footer{
         width: 26em;
         color: $secondary;
         font-size: .6em;
-        letter-spacing: $alt-lettering-spacing;
     }
 
     a, a:hover{
@@ -824,7 +823,6 @@ footer{
             }
         }  
     }
- 
     // 
     #tble-doc-otros{
         width: 100%;
@@ -840,7 +838,6 @@ footer{
         p{
             width: 25em;
             font-size: .85em;
-            letter-spacing: .05em;
         }
 
         img{
@@ -976,7 +973,6 @@ footer{
         p{
             width: 25em;
             font-size: 1em;
-            letter-spacing: .05em;
         }
 
         img{
