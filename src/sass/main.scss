@@ -52,7 +52,6 @@ p{
         
         a:hover{
            text-decoration: none;
-            
         }
 
         .active{
@@ -618,40 +617,83 @@ p{
     }
 }
 
+
+// -----------------------------------------------
+// SISTEMA_INGRESOS
+// -----------------------------------------------
 // 
+
+.card{
+    max-width: 400px;
+    border: none;
+
+    .card-header{
+        border-bottom: 0;
+    }
+
+    .card-body{
+        padding-top: 0;
+
+        .table th{
+            border: 0;
+        }
+    }
+ 
+    .btn-ingresos{
+        background-color: $primary;
+        color: $white;
+        border: none;
+        font-size: 1.2em;
+        letter-spacing: $alt-lettering-spacing;
+        border-radius: 8px;
+    }
+
+    .collapsed {  
+        background-color: #c3c3c3;
+        color: $white;
+        border: none;
+        font-size: 1.2em;
+        letter-spacing: $alt-lettering-spacing;
+        border-radius: 8px;
+    }
+}
+
 .custom-checkbox .custom-control-input~ .custom-control-label::before {
-    border: 1px solid red !important;
+    border: 1px solid $primary !important;
 }
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-    background-color: green!important;
-    border: 1px solid red;
+    background-color: $primary!important;
   }
+// 
 
+.table-ingresos{
+ 
+    thead{
+        tr{
+            th{
+                color: $primary;
+                font-size: .8em;
+                letter-spacing: $alt-lettering-spacing;
+                line-height: 100%;
+            }
+        }
+    }
 
-  .btn-checkmark{
-      border: 1px solid rebeccapurple;
-      border-radius: 0;
-      width: 20px;
-      height: 20px;
-      padding: 0rem;
-  }
-// #exampleCheck2{
-//   color:  red !important;
-// }
-  
+    tbody{
+        tr{
+            td{
+                color: $font-grey;
+                font-size: .8em;
+            }
+        }
+    }
+}
 
-// .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
-//     background-image:none!important;
+.place-chart{
+    width: 300px;
+    height: auto;
+}
 
-// }
-
-// .custom-toggler .navbar-toggler-icon {
-//     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-//   }
-  
-//   .custom-checkbox .navbar-toggler {
-//     border-color: rgb(255,102,203);
-//   } 
 
 // -----------------------------------------------
 // FOOTER
