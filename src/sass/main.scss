@@ -284,7 +284,7 @@ body{
             }
 
             .p-pricing{
-                font-size: .55em;
+                font-size: .5em;
                 font-family: $secondary-family-font;
                 line-height: 110%;
             }
@@ -786,13 +786,16 @@ body{
         }
     }
 
-
     // 
     .index-chart{
         figure{
             img{
             width: 280px;
+            margin-top: 5em!important;
             }
+            // figcaption{
+            //     margin-top: 5em!important;
+            // }
         }
 
         .logos-payment{
@@ -813,7 +816,8 @@ body{
                 }
                 p{
                     font-size: .75em;
-                    line-height: 200%; 
+                    line-height: 200%;
+                    letter-spacing: 0;
                 }
             }
         }
