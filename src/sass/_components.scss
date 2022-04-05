@@ -144,6 +144,21 @@ footer{
     }
 }
 
+// FOOTER//
+    footer{
+        height: 6.5em;
+
+        p{
+            width: 25em;
+            font-size: .85em;
+        }
+
+        img{
+            width: 80px;
+            height: auto;
+        }
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -166,4 +181,20 @@ footer{
         }
     }
 }
+
+// FOOTER//
+footer{
+    height: 7em;
+
+    p{
+        width: 25em;
+        font-size: 1em;
+    }
+
+    img{
+        width: 90px;
+        height: auto;
+    }
+}  
+
 }  
