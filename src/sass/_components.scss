@@ -1,0 +1,169 @@
+
+// Header
+header{
+    width: 100%;
+}
+
+p{ 
+    letter-spacing: $alt-lettering-spacing;
+}
+
+// -----------------------------------------------
+// INDEX
+// -----------------------------------------------
+    .header-index{
+        z-index: 10;
+
+        nav{
+            background-color: transparent !important;
+
+            .logo{
+                width: 90px; 
+                height: auto;
+            }
+
+            li{
+                font-size: 1.4em;
+                color: $secondary;
+        
+                a{
+                    padding-right: .5rem;
+                    padding-left: .5rem;
+
+                    .fab, .fas{
+                        color: $secondary;
+                        transition: all .2s ease-in-out;
+                    }
+                        .fab:hover,
+                        .fas:hover{
+                            transform: scale(1.2);
+                        }
+
+                    .fa-instagram-square, .fa-facebook, .fa-user{
+                        font-size: 1.4em;
+                    }
+                }
+            }
+
+            h3{
+                color: $secondary;
+                display: none;
+            }
+        }
+    }
+
+// -----------------------------------------------
+// SISTEMA_NAVBAR
+// -----------------------------------------------
+    .sist-navbar-container{
+        background-color: $primary;
+
+            button, span, .fas, .fa-bars{
+                border: none;
+                color: white;
+                font-size: 1.4em;
+            }
+            
+            img{
+                width: 60px;
+                height: auto;
+            }
+
+            li, a{
+                color: $secondary !important;
+                font-size: 100%;
+                line-height: 300%;
+                font-weight: lighter;
+                letter-spacing: .08em;
+                color: white;
+            }
+            
+            a:hover{
+            text-decoration: none;
+            }
+
+            .active{
+                overflow:hidden;
+                border-bottom:10px solid $secondary;
+                padding-bottom:10px;
+                font-size: 1.2em;
+            }
+    }
+
+
+// -----------------------------------------------
+// FOOTER
+// -----------------------------------------------
+footer{
+    height: 5em;
+    background: url(/assets/img/pattern-background.png);
+    background-color: $primary; 
+
+    p{
+        width: 26em;
+        color: $secondary;
+        font-size: .6em;
+    }
+
+    a, a:hover{
+        text-decoration: underline;
+        color: white;
+    }
+
+    img{
+        width: 50px;
+        height: auto;
+    }
+}
+// -----------------------------------------------
+// QUERIES
+// -----------------------------------------------
+
+@media (min-width: 768px) {
+    // header-index
+.header-index{
+    nav{
+        .logo {
+            width: 120px;
+            height: auto;
+        }
+
+        .navbar-nav{
+            i{
+                font-size: 150%;
+            }
+
+            h3{
+                display: initial;
+            }
+            .fa-instagram-square, .fa-facebook, .fa-user{
+                font-size: 1.6em;
+            }
+
+        }
+    }
+}
+
+}
+
+@media (min-width: 992px) {
+.header-index{
+    nav{
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+        .navbar-nav{
+        margin-right: 150px !important;
+
+            .fa-user{
+                margin-left: 70px !important;
+            }
+
+            .fa-instagram-square, .fa-facebook, .fa-user{
+                font-size: 1.8em;
+            }
+        }
+    }
+}
+}  

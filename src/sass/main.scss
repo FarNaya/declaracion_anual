@@ -1,6 +1,7 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "variables";
 @import "fonts";
+@import "_components.scss";
 
 
 // $fa-font-path: "~font-awesome/fonts";
@@ -17,50 +18,70 @@ body{
     color: $dark-grey;
     }
 
-header{
-    width: 100%;
-}
+// INDEX HERO
+    .hero{
+        h1{
+            font-size: 180%;
+            line-height: 2.3rem;
+        }
+    }
 
-p{ 
-    letter-spacing: $alt-lettering-spacing;
-}
-// -----------------------------------------------
-// SISTEMA_NAVBAR
-// -----------------------------------------------
-.sist-navbar-container{
-    background-color: $primary;
+    // celular descripcion
+    .index-main{
+        p {
+            font-size: .7rem;
+        }
 
-        button, span, .fas, .fa-bars{
-            border: none;
-            color: white;
-            font-size: 1.4em;
+        h5{
+            font-size: 90%;
+        }
+
+        #div-cfdis{
+            margin-top: 10em !important;
+        }
+    }
+
+    // 
+    .index-chart{
+
+        .h1-index-chart{
+            font-size: 170%;
+        }
+  
+        figure{
+            figcaption{
+                font-size: 1.2rem!important;
+            }
         }
         
-        img{
-            width: 60px;
-            height: auto;
+        .logos-payment{  
+            max-width: 450px;
+
+           .amex,.oxxopay, .spei
+           {
+               width: 70px;
+           }
+    
+           .visa, .mastercard{
+               width: 65px;
+           }
         }
 
-        li, a{
-            color: $secondary !important;
-            font-size: 100%;
-            line-height: 300%;
-            font-weight: lighter;
-            letter-spacing: .08em;
-            color: white;
-        }
-        
-        a:hover{
-           text-decoration: none;
-        }
+        .full-indx-table{
+            padding: 4px;
+           
+            .fa-check,  .full-indx-table .td-hyphen {
+                font-size: 1em;
+            }
 
-        .active{
-            overflow:hidden;
-            border-bottom:10px solid $secondary;
-            padding-bottom:10px;
-            font-size: 1.2em;
+            .btn-chart {
+            width: 7em;
+            height: 40%;
+            }
         }
-}
+    }
+
+
 // -----------------------------------------------
 // BTN
 // -----------------------------------------------
@@ -76,44 +97,7 @@ p{
     -moz-box-shadow: inset 0 0 30px $yellow-alert;
     box-shadow: inset 0 0 30px $yellow-alert;
 }
-// -----------------------------------------------
-// INDEX
-// -----------------------------------------------
-.header-index{
-    z-index: 10;
 
-    nav{
-        background-color: transparent !important;
-
-        li{
-            font-size: 1.4em;
-            color: $secondary;
-      
-            a{
-                padding-right: .5rem;
-                padding-left: .5rem;
-
-                .fab, .fas{
-                    color: $secondary;
-                    transition: all .2s ease-in-out;
-                }
-                    .fab:hover,
-                    .fas:hover{
-                        transform: scale(1.2);
-                    }
-
-                .fa-instagram-square, .fa-facebook, .fa-user{
-                    font-size: 1.4em;
-                }
-            }
-        }
-
-        h3{
-            color: $secondary;
-            display: none;
-        }
-   }
-}
 // hero
 .hero {
     background: url(/assets/img/hero-bg.png);
@@ -617,7 +601,6 @@ p{
     }
 }
 
-
 // -----------------------------------------------
 // SISTEMA_INGRESOS
 // -----------------------------------------------
@@ -694,109 +677,12 @@ p{
     height: auto;
 }
 
-
-// -----------------------------------------------
-// FOOTER
-// -----------------------------------------------
-footer{
-    height: 5em;
-    background: url(/assets/img/pattern-background.png);
-    background-color: $primary; 
-
-    p{
-        width: 26em;
-        color: $secondary;
-        font-size: .6em;
-    }
-
-    a, a:hover{
-        text-decoration: underline;
-        color: white;
-    }
-
-    img{
-        width: 50px;
-        height: auto;
-    }
-}
-
 // -----------------------------------------------
 // QUERIES
 // -----------------------------------------------
 
 @media (min-width: 768px) {
-// header-index
-    .navbar-nav{
-        i{
-            font-size: 150%;
-        }
-
-        h3{
-            display: initial;
-        }
-    }
-
-    .hero{
-        h1{
-            font-size: 180%;
-            line-height: 2.3rem;
-        }
-    }
-
-    // celular descripcion
-    .index-main{
-        p {
-            font-size: .7rem;
-        }
-
-        h5{
-            font-size: 90%;
-        }
-
-        #div-cfdis{
-            margin-top: 10em !important;
-        }
-    }
-
-    // 
-
-    .index-chart{
-  
-        figure{
-            figcaption{
-                font-size: 1rem;
-            }
-        }
-        
-        .logos-payment{  
-            max-width: 450px;
-
-           .amex,.oxxopay, .spei
-           {
-               width: 70px;
-           }
-    
-           .visa, .mastercard{
-               width: 65px;
-           }
-        }
-
-        .full-indx-table{
-            padding: 4px;
-           
-            .fa-check,  .full-indx-table .td-hyphen {
-                font-size: 1em;
-            }
-
-            .btn-chart {
-            width: 7em;
-            height: 40%;
-            }
-        }
-    }
-
-    // 
-// Contacto
+    // Contacto
     .contacto-index{
         .back-icon{
             width: 35px;
@@ -890,20 +776,6 @@ footer{
 }
 @media (min-width: 992px) {
 // index
-    .header-index{
-        .navbar-nav{
-        margin-right: 250px !important;
-            
-            .fa-facebook{
-                margin-left: 50px!important;
-            }
-
-            .fa-user{
-                margin-left: 200px !important;
-            }
-        }
-    }
-
     .hero{
          h1{
             font-size: 200%;
@@ -911,7 +783,6 @@ footer{
             letter-spacing: 0.05em;
             margin-top: 4em !important;
         }
-
     }
 
     .index-main{
@@ -1023,3 +894,11 @@ footer{
         }
     }  
 }
+
+
+// @media (min-width: 1200px){
+//     .hero-container{
+//         margin-top: 50em;
+
+//     }
+// }
