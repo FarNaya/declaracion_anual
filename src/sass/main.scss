@@ -51,7 +51,7 @@ body{
 
     figure{
         figcaption{
-            font-size: 1.2rem!important;
+            font-size: 1rem!important;
         }
     }
         
@@ -245,8 +245,7 @@ body{
 
             p{
                 color: $secondary;
-                color: $secondary;
-                font-size: 120%;
+                font-size: 110%;
                 font-family: $primary-family-font;
             }
 
@@ -308,7 +307,7 @@ body{
         }
             .fa-check, .td-hyphen{
                 color:$highlight;
-                font-size: 1.5em;    
+                font-size: 1.2em;    
             }
     
             .td-hyphen{font-size: 2em; margin-top: 0;}  
@@ -790,12 +789,9 @@ body{
     .index-chart{
         figure{
             img{
-            width: 280px;
+            width: 240px;
             margin-top: 5em!important;
             }
-            // figcaption{
-            //     margin-top: 5em!important;
-            // }
         }
 
         .logos-payment{
