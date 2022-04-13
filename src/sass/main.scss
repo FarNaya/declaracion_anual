@@ -610,6 +610,9 @@ body{
 // -----------------------------------------------
 // SISTEMA_INGRESOS
 // -----------------------------------------------
+.p-instruc{
+    font-size: 95%;
+}
 .card{
     max-width: 400px;
     border: none;
@@ -680,6 +683,29 @@ body{
     width: 300px;
     height: auto;
 }
+
+.pie-chart-colors{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.p-pie-chart{
+    font-size: .85em;
+}
+.percepciones{
+    background-color: $percepciones;
+}
+
+.deducciones{
+    background-color: $deducciones;
+}
+
+.otros-pagos{
+    background-color: $otros-pagos;
+}
+
+
 
 // -----------------------------------------------
 // QUERIES
