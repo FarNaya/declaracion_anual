@@ -537,7 +537,7 @@ body{
     width: 200%;
 
     .view-download-cell{
-        width: 105px;
+        width: 135px;
     }
 }
 
@@ -665,10 +665,8 @@ body{
     // Contacto
     .hero{
         padding-top: 14em;
-
         .hero-text{
             padding: 0px;
-
             h1{
                 font-size: 150%;
                 line-height: 2.5rem;
@@ -703,12 +701,10 @@ body{
         .btn-payment{display:block; margin-left: 0;}
         .tabla-pagos{width: 100%;}
         #container-pago{margin-top: 10em;}
-
         .square{width: 90%;}
 
 // SISTEMA_INICIO//
     .ingresos-del-mes{
-
         .square{
             width: 90%;
             height: 8.5em;
@@ -780,12 +776,10 @@ body{
         }
     }
 }
-
     .index-main{
         .div-icon{
             img{
                 max-width: 65px;
-                // height: auto;
             }
         }
 
@@ -799,7 +793,7 @@ body{
 
      .div-index-mobile{
         margin-top: 3em !important;
-    }
+        }
     }
 
     // 
@@ -842,7 +836,6 @@ body{
     }
 
     .contacto-index{
-
         h5{
             font-size: 150%;
         }
@@ -868,6 +861,29 @@ body{
 .sistema-table-inicio{
     max-width: 75%;
 }
+
+.sistema-table, .sistema_doc_otros, .sistema_doc_recibos{
+    width: 100%;
+    padding: initial;
+    
+    th{
+        p{
+            font-size: 90%;
+        }
+        .ver-descargar-font{
+            font-size: 80% !important;
+        }
+        
+    }
+    
+
+    tbody{
+        p{
+            font-size: 90%;
+        }
+    }  
+}
+
     .sistema-table{
         max-width: 100%;
         th{
