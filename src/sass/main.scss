@@ -81,23 +81,6 @@ body{
         }
     }
 
-// -----------------------------------------------
-// BTN
-// -----------------------------------------------
-.btn{
-    transition: all 0.5s;
-    border: $highlight;
-    background-color: $highlight;
- }
-
-.btn:hover{
-    background-color: $orange;
-    -webkit-box-shadow: inset 0 0 30px $yellow-alert;
-    -moz-box-shadow: inset 0 0 30px $yellow-alert;
-    box-shadow: inset 0 0 30px $yellow-alert;
-}
-// 
-
 // hero
 .hero {
     background: url(/assets/img/hero-bg.png);
@@ -239,43 +222,6 @@ body{
             font-size: .8rem;
             letter-spacing: $alt-lettering-spacing;
         }
-    }
-
-//Table
-    table{
-        color: $font-grey;
-        min-width: 350px;
-        border-collapse: separate;
-        border-spacing: 8px;
-
-        th{
-            background-color: $primary;
-            height: 3.5em;
-
-            p{
-                color: $secondary;
-                font-size: 110%;
-                font-family: $primary-family-font;
-            }
-
-            .p-pricing{
-                font-size: .8rem;
-            }
-        } 
-
-        h6{
-            color: $primary;
-        }
-
-        p{
-            font-size: .75rem;
-            font-family: $secondary-family-font;
-            line-height: 1rem;
-        }
-
-        tr,td {
-            padding:15px;
-        } 
     }
 
 // Full table
