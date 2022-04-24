@@ -23,9 +23,23 @@ body{
 
 // INDEX HERO
     .hero{
-        h1{
-            font-size: 180%;
-            line-height: 2.3rem;
+        padding-top: 6em;
+        // h1{
+        //     font-size: 180%;
+        //     line-height: 2.3rem;
+        //     width: 100%;
+        // }
+
+        .hero-text{
+            padding: 0px;
+        
+            h1{
+                font-size: 90%;
+                color: $secondary;
+                line-height: 1.4rem;
+                letter-spacing: $alt-lettering-spacing;
+                text-align: center;
+            }
         }
     }
 
@@ -105,7 +119,7 @@ body{
         width: 100%;
         height: 100%;
         background-color: black;
-        opacity: 0.4;
+        opacity: 0.5;
         mix-blend-mode: multiply;
         }
 
@@ -117,14 +131,7 @@ body{
         background-color: $secondary;
         opacity: 0.2;
         }
-
-        h1{
-            font-size: 95%;
-            color: $secondary;
-            line-height: 1.8rem;
-            letter-spacing: 0.05em;
-        }
-
+   
     // Form
     .form-container{
         background-color: $secondary;
@@ -657,10 +664,20 @@ body{
     margin-top: 8em;
 }
 
-
 // -----------------------------------------------
 // QUERIES
 // -----------------------------------------------
+@media (min-width: 412px){
+    .hero{
+        .h1-cont-hero{
+            margin-bottom: 2.5em;
+            h1{
+                font-size: 100%;
+                line-height: 1.6rem;
+            }
+        }
+    }
+}
 
 @media (min-width: 768px) {
     // Contacto
@@ -760,6 +777,7 @@ body{
             line-height: 2.5rem;
             letter-spacing: 0.05em;
             margin-top: 4em !important;
+            width: 80%;
         }
     }
 
