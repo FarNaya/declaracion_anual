@@ -651,6 +651,13 @@ body{
     background-color: $otros-pagos;
 }
 
+//
+
+.comp-tbl-sect{
+    margin-top: 8em;
+}
+
+
 // -----------------------------------------------
 // QUERIES
 // -----------------------------------------------
@@ -737,6 +744,11 @@ body{
     }
     .view-download-cell{
         width: 120px;
+    }
+
+
+    .comp-tbl-sect{
+        margin-top: 2.5em;
     }
 }
 @media (min-width: 992px) {
@@ -846,7 +858,8 @@ body{
                 font-size: 1.1em;
             }
         }     
-    }   
+    } 
+    
 }
 
 @media (min-width: 1200px){

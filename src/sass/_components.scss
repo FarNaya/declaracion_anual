@@ -87,9 +87,8 @@ p{
                 border-bottom: 13px solid $secondary;
                 padding-bottom: 13px;
                 font-size: 1.2em;
-            }
+             }
     }
-
 
 // -----------------------------------------------
 // BTNS
@@ -110,7 +109,6 @@ p{
 // -----------------------------------------------
 // TABLES
 // -----------------------------------------------
-
 .general-table{
     color: $font-grey;
     min-width: 350px;
@@ -147,11 +145,10 @@ p{
     } 
 }
 
-
 .comparative-table{
     letter-spacing: $alt-lettering-spacing;
     border-collapse: separate;
-    border-spacing: 5px;
+    border-spacing: 4px;
     padding: .1em !important;
 
 
