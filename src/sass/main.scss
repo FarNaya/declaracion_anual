@@ -469,6 +469,7 @@ body{
     color: $primary;
     font-size: 1.3em;
     letter-spacing: .09em;
+    width: 200px !important;
 }
 // -----------------------------------------------
 // SISTEMA_DOCUMENTOS
@@ -532,7 +533,6 @@ body{
 // -----------------------------------------------
 // SISTEMA_DOCUMENTOS_OTROS
 // -----------------------------------------------
-
 #tble-doc-otros{
     width: 200%;
 
@@ -540,7 +540,6 @@ body{
         width: 135px;
     }
 }
-
 // -----------------------------------------------
 // SISTEMA_INGRESOS
 // -----------------------------------------------
@@ -829,7 +828,6 @@ body{
             }
         }
     }
-
 
     #div-cfdis{
         margin-top: 10em !important;
