@@ -132,10 +132,13 @@ body{
             line-height: 1.8em;
         }
 
-        .red-star{color:$red-alert}
+        
         .r-star-indx{ font-size: 70%;}
     }
+    
 }
+
+.red-star{color:$red-alert}
 
 .btn-primary{
     font-size: $btn-font-size-sm;
@@ -326,7 +329,6 @@ body{
             height: 25px ;
             border-radius: 50%;
             color: $secondary;
-            // padding-top: 1px;
         }
 
         button{
@@ -412,7 +414,7 @@ body{
 
 // DATOS PERSONALES//
 #sis-perfil{
-    box-shadow: 3px 7px 4px 0px rgba(0,0,0,0.15);
+    box-shadow: 1px 4px 4px 0px rgba(0,0,0,0.15);
     margin-bottom: 6em;
 }
 
