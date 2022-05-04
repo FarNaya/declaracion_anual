@@ -22,19 +22,19 @@ body{
 // -----------------------------------------------
 
 // INDEX HERO
-    .hero{
-        padding-top: 6em;
+.hero{
+    padding-top: 6em;
 
-        .hero-text{
-            padding: 0px;
+    .hero-text{
+        padding: 0px;
         
-            h1{
-                font-size: 90%;
-                color: $secondary;
-                line-height: 1.4rem;
-                letter-spacing: $alt-lettering-spacing;
-                text-align: center;
-                text-shadow: 0px -1px 5px rgba(0,0,0,0.65);            }
+        h1{
+            font-size: 90%;
+            color: $secondary;
+            line-height: 1.4rem;
+            letter-spacing: $alt-lettering-spacing;
+            text-align: center;
+            text-shadow: 0px -1px 5px rgba(0,0,0,0.65);            }
         }
     }
 
@@ -42,13 +42,14 @@ body{
 .index-main{
     p {
         font-size: .7rem;
-    }
+        }
 
     h5{
         font-size: 90%;
-    }
-
+        }
 }
+
+
 // 
 .index-chart{
     .h1-index-chart{

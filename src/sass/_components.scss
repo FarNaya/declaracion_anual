@@ -9,10 +9,14 @@ p{
 }
 
 // -----------------------------------------------
-// INDEX_NAVBAR
+// NAVBARS
 // -----------------------------------------------
-    .header-index{
-        z-index: 10;
+
+// ------------
+// INDEX NAVBAR
+// ------------
+.header-index{
+    z-index: 10;
 
         nav{
             background-color: transparent !important;
@@ -50,43 +54,43 @@ p{
                 display: none;
             }
         }
-    }
+}
 
-// -----------------------------------------------
+// ---------------
 // SISTEMA_NAVBAR
-// -----------------------------------------------
-    .sist-navbar-container{
-        background-color: $primary;
+// ---------------
+.sist-navbar-container{
+    background-color: $primary;
 
-            button, span, .fas, .fa-bars{
-                border: none;
-                color: white;
-                font-size: 1.4em;
+        button, span, .fas, .fa-bars{
+            border: none;
+            color: white;
+            font-size: 1.4em;
             }
             
-            img{
-                width: 70px;
-                height: auto;
+        img{
+            width: 70px;
+            height: auto;
             }
 
-            li, a{
-                color: $secondary !important;
-                font-size: 100%;
-                line-height: 300%;
-                font-weight: lighter;
-                letter-spacing: .08em;
-                color: white;
+        li, a{
+            color: $secondary !important;
+            font-size: 100%;
+            line-height: 300%;
+            font-weight: lighter;
+            letter-spacing: .08em;
+            color: white;
             }
             
-            a:hover{
+        a:hover{
             text-decoration: none;
             }
 
-            .active{
-                overflow:hidden;
-                border-bottom: 13px solid $secondary;
-                padding-bottom: 13px;
-                font-size: 1.2em;
+        .active{
+            overflow:hidden;
+            border-bottom: 13px solid $secondary;
+            padding-bottom: 13px;
+            font-size: 1.2em;
              }
     }
 
