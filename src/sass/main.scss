@@ -343,7 +343,6 @@ body{
 // -----------------------------------------------
 // SISTEMA_INICIO
 // -----------------------------------------------
-
 // ALERTAS//
 .alertas-dropdown{
     .alertas{
@@ -430,7 +429,6 @@ body{
         }
     }
 }
-
 // TABLA//
 .sistema-table-inicio{
     margin-top: 10em;
@@ -440,11 +438,9 @@ body{
         width: 150%;
     }
 }
-
 // -----------------------------------------------
 //  SISTEMA_PERFIL
 // -----------------------------------------------
-
 // DATOS PERSONALES//
 #sis-perfil{
     box-shadow: 1px 4px 4px 0px rgba(0,0,0,0.15);
@@ -564,7 +560,6 @@ body{
         }
     }
 }
-
 // -----------------------------------------------
 // SISTEMA_DOCUMENTOS_OTROS
 // -----------------------------------------------
@@ -673,12 +668,9 @@ body{
     background-color: $otros-pagos;
 }
 
-//
 .comp-tbl-sect{
     margin-top: 8em;
 }
-
-// 
 
 // -----------------------------------------------
 // QUERIES
@@ -690,6 +682,7 @@ body{
 
             .h1-cont-hero{
                 margin-bottom: 2.5em;
+
                 .div-bottom{
                     transform: rotate(180deg) translateX(-150%) translateY(100%);
                     }
@@ -849,7 +842,6 @@ body{
     }
 }
 @media (min-width: 992px) {
-
 // index
 .hero{
     padding-top: 5em;
@@ -864,8 +856,6 @@ body{
         .h1-cont-hero{
             .div-text{
                 .descp-p{
-                    width: 520px;
-                    color: $white;
                     font-size: 1.5em;
                     line-height: 1.5em;
                     margin-top: 7em;
@@ -976,7 +966,6 @@ body{
         }
     }  
 }
-
     .sistema-table{
         max-width: 100%;
         th{
@@ -999,6 +988,38 @@ body{
 
 @media (min-width: 1200px){
    .hero{
-    padding-top: 10em;
+    padding-top: 7em;
+    
+        .hero-text{
+            .h1-cont-hero{
+                .div-bottom{
+                    transform: rotate(180deg) translateX(-320%) translateY(95%);
+                    }
+
+                .div-text{
+                    width: 700px;
+                    .descp-p{
+                        font-size: 1.5em;
+                        line-height: 1.5em;
+                        margin-top: 7em;
+                    } 
+
+                    p{
+                        font-size: 3.3rem;
+                        line-height: 3.4rem;
+                    }
+        
+                    h1{
+                        font-size: 3.7rem;
+                        line-height: 3.4rem;
+                    }
+                    .descp-p{
+                        font-size: 1.5em;
+                        line-height: 1.5em;
+                        margin-top: 7em;
+                    } 
+                }
+            }
+        }
     }
 }
