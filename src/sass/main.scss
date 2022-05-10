@@ -27,16 +27,50 @@ body{
 
     .hero-text{
         padding: 0px;
-        
-        h1{
-            font-size: 90%;
-            color: $secondary;
-            line-height: 1.4rem;
-            letter-spacing: $alt-lettering-spacing;
-            text-align: center;
-            text-shadow: 0px -1px 5px rgba(0,0,0,0.65);            }
-        }
+
+        .h1-cont-hero{
+            // width: 300px;
+
+            // 
+            .div-top{
+                border-top: 2.5px solid $orange !important;
+                border-left: 2.5px solid $orange !important;
+                position: absolute;
+                z-index: 5;
+                width: 8em;
+                height: 3em;
+                }
+
+            .div-bottom{
+                border-top: 2.5px solid $orange !important;
+                border-left: 2.5px solid $orange !important;
+                position: absolute;
+                z-index: 5;
+                width: 8em;
+                height: 3em;
+                transform: rotate(180deg) translateX(-140%) translateY(95%);
+                }
+
+            .div-text{
+                width: 295px;
+
+                    p{
+                        color: $white;
+                        font-size: 1.5rem;
+                        line-height: 1.7rem;
+                    }
+
+                    h1{
+                        color:  $orange;
+                        font-size: 2.3rem;
+                        letter-spacing: $alt-lettering-spacing;
+                        line-height: 1.7rem;
+                    }
+
+                }
+            }
     }
+}
 
 // Celular descripcion
 .index-main{
@@ -48,8 +82,6 @@ body{
         font-size: 90%;
         }
 }
-
-
 // 
 .index-chart{
     .h1-index-chart{
@@ -120,7 +152,7 @@ body{
         background-color: $secondary;
         min-height: 395px;
         max-width: 310px;
-        line-height: 150%;
+        line-height: 120%;
 
         label{
             font-size: .8em;
@@ -131,12 +163,11 @@ body{
             font-family: $secondary-family-font;
             font-size: 60%;
             line-height: 1.8em;
+            color: $font-grey;
         }
-
         
         .r-star-indx{ font-size: 70%;}
-    }
-    
+    }  
 }
 
 .red-star{color:$red-alert}
@@ -148,7 +179,6 @@ body{
     font-weight: lighter;
     letter-spacing: $btn-lettering-spacing;
 }
-
     //Caracteristicas
     .index-main{
         margin: 5em auto 5em auto;
@@ -655,10 +685,6 @@ body{
     .hero{
         .h1-cont-hero{
             margin-bottom: 2.5em;
-            h1{
-                font-size: 100%;
-                line-height: 1.6rem;
-            }
         }
     }
 }
@@ -667,11 +693,38 @@ body{
     // Contacto
     .hero{
         padding-top: 14em;
+
+        .form-container{
+            max-width: 340px;
+            line-height: 150%;
+
+            p{ 
+                line-height: 2em;
+            }
+        }  
+
         .hero-text{
-            padding: 0px;
-            h1{
-                font-size: 150%;
-                line-height: 2.5rem;
+
+            .h1-cont-hero{
+                    width: 500px;
+
+                .div-bottom{
+                    transform: rotate(180deg) translateX(-265%) translateY(95%);
+                    }
+
+                .div-text{
+                    width: 450px;
+        
+                    p{
+                        font-size: 2.8rem;
+                        line-height: 3rem;
+                    }
+        
+                    h1{
+                        font-size: 3.2rem;
+                        line-height: 3rem;
+                    }
+                }
             }
         }
     }
@@ -734,7 +787,6 @@ body{
     }
 
 // SISTEMA_DOCUMENTOS//
-// NO NESTING
     .sistema-table, .sistema_doc_otros, .sistema_doc_recibos{
         width: 100%;
         padding: initial;
