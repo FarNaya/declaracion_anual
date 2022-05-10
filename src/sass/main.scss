@@ -761,13 +761,23 @@ body{
             width: 35px;
             height: 35px;
 
+            .fa-at{
+                width: 35px;
+                height: 35px;    
+            }
+
             i{
                 font-size: 20px;
             }
         }
         h5{
             font-size: 120%;
-        }  
+        }
+
+        h6{
+            font-size: 130%;
+
+        }
     }
     //
     .btn-chart{
@@ -989,7 +999,6 @@ body{
 
 @media (min-width: 1200px){
    .hero{
-    padding-top: 8em;
-    
+    padding-top: 10em;
     }
 }
