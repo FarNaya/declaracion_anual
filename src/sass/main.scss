@@ -29,8 +29,6 @@ body{
         padding: 0px;
 
         .h1-cont-hero{
-            // width: 300px;
-
             // 
             .div-top{
                 border-top: 2.5px solid $orange !important;
@@ -48,11 +46,11 @@ body{
                 z-index: 5;
                 width: 8em;
                 height: 3em;
-                transform: rotate(180deg) translateX(-140%) translateY(95%);
+                transform: rotate(180deg) translateX(-130%) translateY(100%);
                 }
 
             .div-text{
-                width: 295px;
+                width: 300px;
 
                     p{
                         color: $white;
@@ -702,18 +700,14 @@ body{
                 line-height: 2em;
             }
         }  
-
         .hero-text{
-
             .h1-cont-hero{
-                    width: 500px;
-
                 .div-bottom{
                     transform: rotate(180deg) translateX(-265%) translateY(95%);
                     }
 
                 .div-text{
-                    width: 450px;
+                    width: 500px;
         
                     p{
                         font-size: 2.8rem;
@@ -724,6 +718,7 @@ body{
                         font-size: 3.2rem;
                         line-height: 3rem;
                     }
+
                 }
             }
         }
@@ -821,12 +816,27 @@ body{
 .hero{
     padding-top: 16em;
 
+    .form-container{
+    max-height: 500px;
+        line-height: 170%;
+    }
+
+.hero-content{
+    margin-top: 10em !important;
+}
+
     .hero-text{
         padding: 0px;
-
-        h1{
-            font-size: 180%;
-            line-height: 2.5rem;
+        
+        .h1-cont-hero{
+            .div-text{
+                .descp-p{
+                    color: $white;
+                    font-size: 1.5em;
+                    line-height: 1.5em;
+                    margin-top: 7em;
+                } 
+            }
         }
     }
 }
