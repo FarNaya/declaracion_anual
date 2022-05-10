@@ -118,6 +118,7 @@ p{
     min-width: 350px;
     border-collapse: separate;
     border-spacing: 8px;
+    letter-spacing: $alt-lettering-spacing;
 
     th{
         background-color: $primary;
